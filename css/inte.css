@@ -10,6 +10,11 @@ Text-shadow : #aba8a0
 ****** */
 
 /* HTML Generic */
+html, body {
+	height:100%;
+	width:100%;
+}
+
 body {
 	background-color: #FFFAEF;
 	font-family: "Helvetica", "Arial", sans-serif;
@@ -39,6 +44,14 @@ h1,h2,h3,h4,h5 {
 	line-height: 1em;
 	font-weight: 400;
 	text-shadow: 2px 2px 0px rgba(171, 168, 160, 0.6);
+	margin: 0;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right:;
 }
 
 /* Site title */
@@ -49,13 +62,29 @@ h1 {
 
 /* Articles Generic */
 div.articles {
-	width: 80%;
-	margin-left: 5%;
 	color: #696969;
 }
-article#past h2 {
+
+article {
+	width: auto;
+	height: 100%;
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+  	-moz-background-size: cover; /* pour Firefox */
+  	-o-background-size: cover; /* pour Opera */
+  	background-size: cover; /* version standardisée */
+  	padding-top: 40px;
+}
+
+
+article h2 {
 	color: #ec6044;
 	font-size: 2.6em; /* 22pt */
+	margin-bottom: 20px;
+}
+
+article .content {
+	margin-left: 5%;
+	width: 80%;
 }
 
 /* Navigation */
@@ -69,12 +98,25 @@ aside nav {
 	height: 100%;
 }
 
+aside nav h2 {
+	background-color: #fffcf5;
+	padding: 5px 3px 5px 5px;
+}
+
 aside nav ul li {
 	list-style-type: none;
 	height: 38px;
 	padding-top: 6px;
+	margin-left: 4px;
+}
+aside nav ul li a {
+	height: 32px;
+	widows: 32px;
+	display: block;
+	padding-top: 6px;
 	text-indent: -9999px;
 	margin-left: 4px;
+
 }
 
 aside nav ul li:hover {
@@ -82,26 +124,58 @@ aside nav ul li:hover {
 	cursor: pointer;
 }
 
-aside nav ul li#home {
+aside nav ul li#home a {
 }
 
-aside nav ul li#past {
+aside nav ul li#past a {
 	background: url('../img/nav_yellow2_light.png') no-repeat top left;
 }
 
 
-aside nav ul li#present {
+aside nav ul li#present a {
 	background:  url('../img/nav_green_light.png') no-repeat top left;
 }
 
-aside nav ul li#future {
+aside nav ul li#future a {
 	background:  url('../img/nav_blue_light.png') no-repeat top left;
 }
 
 aside nav ul li#credits {
 }
 
-article aside a {
+
+/* Articles Aside */
+/* **** HOME **** */
+article#home {
+	z-index:998px;
+	background-position: fixed; 
+}
+
+article#home p {
+	width: 60%;
+	display: inline-block;
+	line-height: 1.6em;
+	text-justify: newspaper;
+}
+
+article#home aside {
+	width: 30%;
+	float: right;
+}
+
+article#home aside img {
+	border:0px solid transparent;
+	border-radius: 10px;
+	box-shadow: 2px 3px 0px rgba(171, 168, 160, 0.6);
+}
+
+article#home aside div.animation {
+	width: 230px;
+	height: 192px;
+	overflow: hidden;
+}
+
+article#home aside div.animation a {
 	width: 69px;
 	height: 59px;
 	background :url('../img/icon_down_light.png') no-repeat center;
@@ -130,24 +204,79 @@ article aside a {
     }
 }
 
-
-
-/* Articles Aside */
-article#home {
-	height: 700px;
+/* **** EDITIONS VOLUMIQUE 1 **** */
+article#past {
+	z-index:997px;
+	background-position: fixed; 
 }
-article#home p {
-	width: 60%;
-	display: inline-block;
+
+article#past aside {
+	margin-left: 5%;
+}
+article#past p {
 	line-height: 1.6em;
-	text-justify: newspaper;
+	margin-top: 20px;
 }
-article#home aside {
-	width: 30%;
-	float: right;
+
+article#past p.left {
+	width: 40%;
+	margin-right: 10%;
 }
-article#home aside img {
-	border:0px solid transparent;
-	border-radius: 10px;
-	box-shadow: 2px 3px 0px rgba(171, 168, 160, 0.6);
+
+article#past p.right {
+	width: 90%;
+}
+
+article#past aside img {
+	display: inline-block;
+}
+
+article#past aside img#book {}
+
+article#past aside img#ipad {}
+
+
+article#past aside div.animation {
+	display: inline-block;
+	margin: 0 10%;
+	animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+    	transform: rotate(359deg);
+    }
+    to   {
+    	transform: rotate(0);
+    }
+}
+
+/* **** EDITIONS VOLUMIQUE 1.1 **** */
+
+article#past_1 {
+	z-index:996px;
+	background-position: fixed;
+	background-color: #e84053;
+	margin-left: 0;
+	color: #fffcf5;
+}
+
+article#past_1 h2 {
+	color: #fffcf5;
+}
+article#past_1 aside {
+	margin-left: 5%;
+}
+article#past_1 p {
+	line-height: 1.6em;
+	margin-top: 20px;
+}
+
+article#past_1 p.left {
+	width: 40%;
+	margin-right: 10%;
+}
+
+article#past_1 p.right {
+	width: 90%;
 }

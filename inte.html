@@ -22,7 +22,9 @@
 
         <!-- JS -->
         <script src="js/vendor/jquery-1.8.2.min.js"></script>
-        <script src="js/jquery.scrollorama.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+
+        <!-- <script src="js/jquery.scrollorama.js"></script> -->
 
     </head>
     <body>
@@ -32,38 +34,58 @@
 
         <div class="wrapper">  
             <div class="articles">
-				<article class="scrollblock" id="home">            
-	            	<h1 id="title">INTERFACES TANGIBLES</h1>
-	             	<p>
-	            	Véritable révolution lors de leur apparition, les interfaces graphiques sont aujourd’hui la norme en matière d’interaction avec les supports numériques. Par l’intermédiaire d’une souris et d’un clavier l’utilisateur est capable de faire toute sortes d’actions mais l’expérience interactive reste limitée.
-	Aujourd’hui on voit donc apparaitre une nouvelle génération d’interfaces : les interfaces tangibles.<br/><br/>
-	Par définition ce sont des outils de manipulation directe et physique de données numériques. <br/>Elles visent à matérialiser le flux numérique, la perception des interactions et des usages.
-					</p>
-					<aside>
-						<img src="img/ipad_light.png" alt="iPad 2D">
-						<a class="scrolldown" href="#present" title="Scroll Down">Scroll Down</a>
-					</aside>
+				<article class="scrollblock" id="home">    
+					<div class="content">        
+		            	<h1 id="home">INTERFACES TANGIBLES</h1>
+		             	<p>
+		            	Véritable révolution lors de leur apparition, les interfaces graphiques sont aujourd’hui la norme en matière d’interaction avec les supports numériques. Par l’intermédiaire d’une souris et d’un clavier l’utilisateur est capable de faire toute sortes d’actions mais l’expérience interactive reste limitée.
+		Aujourd’hui on voit donc apparaitre une nouvelle génération d’interfaces : les interfaces tangibles.<br/><br/>
+		Par définition ce sont des outils de manipulation directe et physique de données numériques. <br/>Elles visent à matérialiser le flux numérique, la perception des interactions et des usages.
+						</p>
+
+						<aside>
+							<img src="img/ipad_light.png" alt="iPad 2D">
+							<div class="animation">
+								<a class="scrollTo" href="#past" title="Scroll Down">Scroll Down</a>
+							</div>
+						</aside>
+					</div>
 					<div class="clearfix"></div>
 				</article>
 
 	            <article class="scrollblock" id="past">
-	                <h2>EDITIONS VOLUMIQUE</h1>
+	            	<div class="content">        
 
-	                <section class="desc">
-	                    <p>Description text</p>
-	                </section>
-	                <section class="animation">
-	                    Animations
-	                </section>
+		                <h2>EDITIONS VOLUMIQUE</h1>
+		                <aside>
+		                	<img id="book" src="img/volu1_livre.png" alt="Livre 2D">
+		                	<div class="animation">
+		                		<img src="img/volu1_melanger.png">
+		                	</div>
+		                	<img id="ipad" src="img/volu1_ipad.png" alt="iPad 2D">
+
+		                </aside>
+		               	<p class="left">En 2009 Etienne Mineur et Bertrand Duplat fondent les éditions volumiques en suivant une philosophie bien précise : revenir au monde du papier en y inculpant tout ce qu'ils avaient pu apprendre du monde du design web, du jeu vidéo etc..
+	<br/>A eux deux ils mettent au point la reconnaissance d'objet sur écran capacitif.</p>
+		                <p class="right">Il suffit que l'écran soit multitouch, que les objets aient un tag réalisé avec de l'encre conductible pour que cela fonctionne. Sans aucune pile, avec seulement un objet lambda, de l'encre conductible et le corps de l'utilisateur comme énergie l'objet devient tangible.
+		                </p>
+		            </div>	
+	                <div class="clearfix"></div>
 	            </article>
 
-	            <article class="scrollblock" id="present">
-	                <section class="desc">
-	                    <p>Description text</p>
-	                </section>
-	                <section class="animation">
-	                    Animations
-	                </section>
+	            <article class="scrollblock" id="past_1">
+	            	<div class="content">        
+
+		                <h2>EDITIONS VOLUMIQUE</h1>
+		                <aside>
+		                	<img src="img/volu1.png" alt="Editions Volumiques 1">
+		                </aside>
+		               	<p class="left">En 2009 Etienne Mineur et Bertrand Duplat fondent les éditions volumiques en suivant une philosophie bien précise : revenir au monde du papier en y inculpant tout ce qu'ils avaient pu apprendre du monde du design web, du jeu vidéo etc..
+	<br/>A eux deux ils mettent au point la reconnaissance d'objet sur écran capacitif.</p>
+		                <p class="right">Il suffit que l'écran soit multitouch, que les objets aient un tag réalisé avec de l'encre conductible pour que cela fonctionne. Sans aucune pile, avec seulement un objet lambda, de l'encre conductible et le corps de l'utilisateur comme énergie l'objet devient tangible.
+		                </p>
+		            </div>
+	                <div class="clearfix"></div>
 	            </article>
 	        </div> <!-- end div.articles -->
 
@@ -71,17 +93,35 @@
                 <nav>
                     <h2>Navigation</h2>
                     <ul>
-                    	<li id="home">Home</li>
-                        <li id="past">Past</li>
-                        <li id="present">Present</li>
-                        <li id="future">Future</li>
-                        <li id="credits">Credits</li>
+                    	<li id="home"><a href="#home" title="Home">Home</a></li>
+                        <li id="past"><a href="#past" title="Past">Past</a></li>
+                        <li id="present"><a href="#present" title="Present">Present</a></li>
+                        <li id="future"><a href="#future" title="Future">Future</a></li>
+                        <li id="credits"><a href="#credits" title="Credits">Credits</a></li>
                     </ul>
                 </nav>
             </aside>
 
         </div> 	<!-- end div.wrapper -->
-      
+      	<script type="text/javascript">	
+		    $(document).ready(function(){		
+		        $('article#home').parallax("center", 0.5, true, 400);
+		        $('article#past').parallax("center", 1, true);
+		        $('article#past_1').parallax("center", 0.5, true);
+		    })
+		</script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+ 
+				$("nav ul li a, a.scrollTo").click(function(event){		
+				event.preventDefault();
+				console.log('Hash : ' + $(this.hash).offset().top);
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1700);
+				});
+			});
+		</script>
+
         <script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-35902643-1']);
