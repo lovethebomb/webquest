@@ -101,6 +101,37 @@ aside nav ul li#future {
 aside nav ul li#credits {
 }
 
+article aside a {
+	width: 69px;
+	height: 59px;
+	background :url('../img/icon_down_light.png') no-repeat center;
+	text-indent: -9999px;
+	display: block;
+	margin: 80px;
+	animation: levitate 2s infinite ease-out alternate-reverse;
+	-webkit-animation: levitate 2s infinite ease-out alternate-reverse;
+}
+
+@keyframes levitate {
+    from {
+    	margin-top: 80px;
+    }
+    to   {
+    	margin-top: 50px;
+    }
+}
+
+@-webkit-keyframes levitate {
+    from {
+    	margin-top: 80px;
+    }
+    to   {
+    	margin-top: 50px;
+    }
+}
+
+
+
 /* Articles Aside */
 article#home {
 	height: 700px;
@@ -109,6 +140,7 @@ article#home p {
 	width: 60%;
 	display: inline-block;
 	line-height: 1.6em;
+	text-justify: newspaper;
 }
 article#home aside {
 	width: 30%;
