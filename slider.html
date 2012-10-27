@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<style type="text/css">
+
+
+/* Mise en place des diffÃ©rentes parties / slides */
+#slide1, #slide2, #slide3 {
+	height: 1000px;
+	padding-top:100px;
+		background-position: fixed;
+}
+
+#slide1 {
+	background:url(img/slide1-bg.jpg) center 0 no-repeat fixed; }
+
+#slide2 {
+
+}
+
+#slide3 {
+	background:url(img/slide3-bg.jpg) center 0 no-repeat fixed; 
+}
+.wrapper {
+	height: 700px;
+	overflow: hidden;
+}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.parallax-1.1.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.scrollTo-1.4.3.1.min.js"></script>
+	<script type="text/javascript">	
+    $(document).ready(function(){		
+        $('#slide1').parallax("center", 0, 0.1, true);
+        $('#slide2').parallax("center", 900, 0.1, true);
+        $('#slide3').parallax("center", 2900, 0.1, true);
+        // $('#nav').scrollTo( $('#slide3'), 800 );
+        $('#nav').click(function(){
+			$('.wrapper').scrollTo( '#slide3' , 800 );
+		}); 
+        
+    })
+</script>
+</head>
+<body>
+	<a href="#" id="nav">Click me!</a>
+	<div class="wrapper">
+
+		<div id="slide1"> Slide 1</div>
+		<div id="slide2">
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			</div>
+		</div>
+		<div id="slide3"> Slide 3</div>
+	</div>
+</body>
+</html>

@@ -14,6 +14,10 @@ body {
 	letter-spacing: 0.05em;
 }
 
+div.wrapper {
+	margin: 25px 50px;
+}
+
 .circle {
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 150px;
@@ -40,15 +44,27 @@ body {
 }
 
 aside nav {
-	background: rgba(0,0,0, 0.5);
+	letter-spacing: 0em;
+	color: #fff;
+	background: rgba(0,0,0, 0.9);
 	padding: 20px;
-	border: 2px dotted slategray;
+	border: 1px dashed black;
 	float: right;
-	width: 200px;
-	height: 300px;
+	width: 150px;
+	height: 200px;
 	margin-right: 2%;
+	font-size: 0.7em;
+	position: fixed;
+	right: 2%;
 }
 
+aside nav ul li {
+	list-style-type: circle;
+}
+
+aside nav ul li:hover {
+	color: #8494B2;
+}
 ::selection {
 		background: #ffb7b7; /* Safari */
 	}
@@ -56,3 +72,53 @@ aside nav {
 	::-moz-selection {
 		background: rgba(150,0,0,0.4); /* Safari */
 	}
+
+
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+article {
+		position: relative;
+	margin: 0;
+	width: 100%;
+	height: 600px;
+}
+#header, #intro, #second{
+	width: 100%;
+}
+
+#intro{
+	background-color: white;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+	padding: 160px 0 0 0;
+}
+
+#titre1 {
+	margin: 80px auto 0;
+	width: 1050px;
+	position: relative;
+	z-index: 99;
+}
+
+#title2 {
+	margin: 80px auto 0;
+	width: 1050px;
+	position: relative;
+	z-index: 99;
+}

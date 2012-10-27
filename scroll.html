@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/jquery-1.8.2.min.js"></script>
+    <script src="js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="js/jquery.scrollorama.js"></script>
+    <style type="text/css">
+		div.wrapper {
+			margin: 25px 50px;
+			height: 700px !important;
+			overflow: hidden !important;
+		}
+    </style>
+</head>
+<body>
+	<div class="wrapper">       
+        <h1 id="title">Tangible User Interfaces</h1>
+        <aside>
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li id="slide1">Past</li>
+                    <li id="slide2">Present</li>
+                    <li id="slide3">Future</li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <article class="scrollblock" id="slide1">
+            <h1 id="titre1">Moving Title</h1>
+
+            <section class="desc">
+                <p>Description text</p>
+            </section>
+            <section class="animation">
+                Animations
+            </section>
+        </article>
+
+        <article class="scrollblock" id="slide2">
+            <h1 id="titre2">Moving Title 2</h1>
+
+            <section class="desc">
+                <p>Description text</p>
+            </section>
+            <section class="animation">
+                Animations
+            </section>
+        </article>
+
+        <article class="scrollblock" id="slide3">
+            <h1 id="titre3">Moving Title 3</h1>
+
+            <section class="desc">
+                <p>Description text</p>
+            </section>
+            <section class="animation">
+                Animations
+            </section>
+        </article>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	/* ScrollTo */
+
+	$('nav ul li').click(function(){
+        console.log('article#' + $(this).attr('id'));
+        //$('.wrapper').scrollTo( 'article#' + $(this).attr('id') , 800 );
+    });  
+
+	/* Scrollorama */
+    
+     var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+		scrollorama.animate('#titre1',{ duration: 300, property:'zoom', end: 8 });
+		scrollorama.animate('#titre2',{ duration: 300, property:'rotate', end: 100 });
+		scrollorama.animate('#titre3',{ duration: 200, property:'rotate', end: 48 });
+
+            // assign function to add behavior for onBlockChange event
+            scrollorama.onBlockChange(function() {
+                console.log('scrolled!');
+            });
+})
+</script>
+</html>

@@ -1,0 +1,121 @@
+/* ******
+ style.css 
+
+Main : #f9c159
+Past : #ec6044
+Present :
+Future :
+Text : #696969
+Text-shadow : #aba8a0
+****** */
+
+/* HTML Generic */
+body {
+	background-color: #FFFAEF;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+	letter-spacing: 0.05em;
+	background-color: #fffcf5;
+}
+
+div.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+::selection {
+	background: #ffb7b7; /* Safari */
+}
+
+::-moz-selection {
+	background: rgba(150,0,0,0.4); /* Safari */
+}
+
+/* Headings */
+h1,h2,h3,h4,h5 {
+	font-family: "BebasRegular";
+	letter-spacing: 0.09em;
+	line-height: 1em;
+	font-weight: 400;
+	text-shadow: 2px 2px 0px rgba(171, 168, 160, 0.6);
+}
+
+/* Site title */
+h1 { 
+	font-size: 3.85em;	/* 41pt */
+	color: #f9c159;
+}
+
+/* Articles Generic */
+div.articles {
+	width: 80%;
+	margin-left: 5%;
+	color: #696969;
+}
+article#past h2 {
+	color: #ec6044;
+	font-size: 2.6em; /* 22pt */
+}
+
+/* Navigation */
+aside nav {
+	display: block;
+	position: fixed;
+	right: 2%;
+	top: 0px;
+	padding-top: 5%;
+	background:  url('../img/nav_bg_filet.png') repeat-y center;
+	height: 100%;
+}
+
+aside nav ul li {
+	list-style-type: none;
+	height: 38px;
+	padding-top: 6px;
+	text-indent: -9999px;
+	margin-left: 4px;
+}
+
+aside nav ul li:hover {
+	background-size: 34px !important;
+	cursor: pointer;
+}
+
+aside nav ul li#home {
+}
+
+aside nav ul li#past {
+	background: url('../img/nav_yellow2_light.png') no-repeat top left;
+}
+
+
+aside nav ul li#present {
+	background:  url('../img/nav_green_light.png') no-repeat top left;
+}
+
+aside nav ul li#future {
+	background:  url('../img/nav_blue_light.png') no-repeat top left;
+}
+
+aside nav ul li#credits {
+}
+
+/* Articles Aside */
+article#home {
+	height: 700px;
+}
+article#home p {
+	width: 60%;
+	display: inline-block;
+	line-height: 1.6em;
+}
+article#home aside {
+	width: 30%;
+	float: right;
+}
+article#home aside img {
+	border:0px solid transparent;
+	border-radius: 10px;
+	box-shadow: 2px 3px 0px rgba(171, 168, 160, 0.6);
+}
