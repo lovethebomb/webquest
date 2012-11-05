@@ -512,54 +512,58 @@ article#denosjours header span.baseline {
   font-size: 1.2em;
   font-style: italic;
   text-align: center;
-  width: 650px;
+  width: 670px;
   margin: 0 9%;
   color: #8d8a82;
 }
+/* line 495, ../sass/screen.scss */
+article#denosjours div#linecut {
+  margin: 40px 49%;
+}
 
 /* **** EDITIONS VOLUMIQUES **** */
-/* line 499, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 article#editions_volumiques {
   z-index: 998px;
   background-position: fixed;
 }
-/* line 503, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 article#editions_volumiques div#nouveauxjeux {
   margin-top: 90px;
 }
-/* line 507, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 article#editions_volumiques div#linecut {
   background-color: #e64552;
 }
-/* line 511, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 article#editions_volumiques header {
   display: inline-block;
   vertical-align: bottom;
   margin-bottom: 30px;
 }
-/* line 516, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 article#editions_volumiques header h1, article#editions_volumiques header h2, article#editions_volumiques header h3 {
   color: #e64552;
 }
-/* line 521, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 article#editions_volumiques header h1 {
   font-size: 4.35em;
   color: #e64552;
   margin: 20px 0;
   display: inline-block;
 }
-/* line 528, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 article#editions_volumiques header span {
   font-size: 1.35em;
   color: black;
   font-weight: 700;
   color: black;
 }
-/* line 535, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 article#editions_volumiques header span.baseline {
   display: inline-block;
 }
-/* line 539, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 article#editions_volumiques p {
   display: inline-block;
   font-size: 0.9em;
@@ -567,7 +571,7 @@ article#editions_volumiques p {
   width: 40%;
   text-justify: newspaper;
 }
-/* line 546, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 article#editions_volumiques span.title {
   color: black;
   display: block;
@@ -575,28 +579,28 @@ article#editions_volumiques span.title {
   font-weight: 700;
   padding-bottom: 10px;
 }
-/* line 555, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 article#editions_volumiques p.heading {
   font-size: 1em;
   width: 65%;
   font-weight: 700;
   font-style: italic;
 }
-/* line 562, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 article#editions_volumiques aside {
   width: 50%;
   float: right;
 }
-/* line 566, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 article#editions_volumiques aside p {
   width: 80%;
 }
-/* line 572, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 article#editions_volumiques aside div.animation #livre {
   z-index: 89;
   position: relative;
 }
-/* line 577, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 article#editions_volumiques aside div.animation #fleches {
   z-index: 90;
   margin-left: -155px;
@@ -604,57 +608,57 @@ article#editions_volumiques aside div.animation #fleches {
   -webkit-animation: rotate 6s infinite linear;
   position: relative;
 }
-/* line 585, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 article#editions_volumiques aside div.animation #ipad {
   z-index: 91;
   margin-left: -40px;
   position: relative;
 }
-/* line 595, ../sass/screen.scss */
+/* line 598, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations p.center span {
   margin-left: 16px;
   width: 100%;
 }
-/* line 600, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations aside {
   margin-top: 50px;
 }
-/* line 603, ../sass/screen.scss */
+/* line 606, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions {
   width: 50%;
   float: left;
 }
-/* line 606, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li {
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 50px 0px;
 }
-/* line 611, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.drag {
   z-index: 110;
   position: absolute;
 }
-/* line 615, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.drag:hover {
   cursor: move;
 }
-/* line 618, ../sass/screen.scss */
+/* line 621, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.drag.dropped:hover {
   cursor: default;
 }
-/* line 621, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.description {
   margin-top: 30px;
   margin-left: 200px;
 }
-/* line 624, ../sass/screen.scss */
+/* line 627, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.description span.title {
   font-size: 1em;
   letter-spacing: 0;
   padding-bottom: 0;
 }
-/* line 629, ../sass/screen.scss */
+/* line 632, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.description a:before {
   background: url("../img/link.png") no-repeat center center #fff3df;
   width: 32px;
@@ -664,38 +668,38 @@ article#editions_volumiques div.content#realisations ul#pions li div.description
   vertical-align: middle;
   content: "";
 }
-/* line 638, ../sass/screen.scss */
+/* line 641, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.description a {
   padding-top: 3px;
   font-style: normal;
 }
-/* line 642, ../sass/screen.scss */
+/* line 645, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li div.description p {
   margin: 0;
   font-size: 0.8em;
   font-style: italic;
 }
-/* line 650, ../sass/screen.scss */
+/* line 653, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li#pion1 {
   height: 145px;
   background-image: url("../img/editions_volumiques/_realisation_pion1_trou.png");
 }
-/* line 655, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li#pion2 {
   height: 155px;
   background-image: url("../img/editions_volumiques/_realisation_pion2_trou.png");
 }
-/* line 660, ../sass/screen.scss */
+/* line 663, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations ul#pions li#pion3 {
   height: 114px;
   background-image: url("../img/editions_volumiques/_realisation_pion3_trou.png");
 }
-/* line 665, ../sass/screen.scss */
+/* line 668, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation {
   width: 40%;
   display: inline-block;
 }
-/* line 669, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad {
   background: url("../img/editions_volumiques/_realisation_ipad.png") no-repeat center center;
   width: 438px;
@@ -703,7 +707,7 @@ article#editions_volumiques div.content#realisations div.animation div#ipad {
   z-index: 100;
   position: relative;
 }
-/* line 676, ../sass/screen.scss */
+/* line 679, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div#dropzone {
   width: 377px;
   height: 250px;
@@ -711,25 +715,25 @@ article#editions_volumiques div.content#realisations div.animation div#ipad div#
   top: 50px;
   left: 30px;
 }
-/* line 684, ../sass/screen.scss */
+/* line 687, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div.description {
   top: 250px;
   position: relative;
 }
-/* line 688, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div.description span.title {
   font-size: 1.3em;
   color: #e64552;
   margin-left: 40%;
   width: 130px;
 }
-/* line 695, ../sass/screen.scss */
+/* line 698, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div.description p {
   font-size: 1em;
   margin-left: 10%;
   text-align: center;
 }
-/* line 701, ../sass/screen.scss */
+/* line 704, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div.description div {
   display: block;
   -webkit-transition: opacity 1s ease-out;
@@ -737,7 +741,7 @@ article#editions_volumiques div.content#realisations div.animation div#ipad div.
   opacity: 0;
   height: 0;
 }
-/* line 708, ../sass/screen.scss */
+/* line 711, ../sass/screen.scss */
 article#editions_volumiques div.content#realisations div.animation div#ipad div.description div.active {
   opacity: 1;
   height: auto;
@@ -745,48 +749,48 @@ article#editions_volumiques div.content#realisations div.animation div#ipad div.
 
 /* Animations */
 @keyframes levitate {
-  /* line 721, ../sass/screen.scss */
+  /* line 724, ../sass/screen.scss */
   from {
     margin-top: 80px;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   to {
     margin-top: 50px;
   }
 }
 
 @-webkit-keyframes levitate {
-  /* line 730, ../sass/screen.scss */
+  /* line 733, ../sass/screen.scss */
   from {
     margin-top: 80px;
   }
 
-  /* line 733, ../sass/screen.scss */
+  /* line 736, ../sass/screen.scss */
   to {
     margin-top: 50px;
   }
 }
 
 @keyframes rotate {
-  /* line 740, ../sass/screen.scss */
+  /* line 743, ../sass/screen.scss */
   from {
     transform: rotate(359deg);
   }
 
-  /* line 743, ../sass/screen.scss */
+  /* line 746, ../sass/screen.scss */
   to {
     transform: rotate(0);
   }
 }
 
 @-webkit-keyframes rotate {
-  /* line 749, ../sass/screen.scss */
+  /* line 752, ../sass/screen.scss */
   from {
     -webkit-transform: rotate(359deg);
   }
 
-  /* line 752, ../sass/screen.scss */
+  /* line 755, ../sass/screen.scss */
   to {
     -webkit-transform: rotate(0);
   }
