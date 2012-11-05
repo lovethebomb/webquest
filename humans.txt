@@ -3,11 +3,11 @@
 
 # TEAM
 	TEAM Gobelins CDNL 2013 - TUI
-	Maurel Jérémy	-- design -- 
-	Moyse Sophie	-- design --
-	Taloc Léa	-- design --
-	Garnier Nicolas -- dev    --
-	Lucas Heymès	-- dev    -- @ltb_lucas
+	Maurel JÈrÈmy	-- design 	-- @JeremyMaurel
+	Moyse Sophie	-- design 	-- @
+	Taloc LÈa		-- design 	-- @leaTaloc
+	Garnier Nicolas -- dev    	-- @jackismissing
+	Lucas Heymès		-- dev    	-- @ltb_lucas
 
 # THANKS
 
