@@ -102,12 +102,6 @@ div.articles {
 	  	background-size: cover; /* version standardisée */
 	  	padding-top: 40px;
 
-	  	h2 {
-			color: #ec6044;
-			font-size: 2.6em; /* 22pt */
-			margin-bottom: 20px;
-		}
-
 		.content {
 			margin-left: 5%;
 			width: 80%;
@@ -131,7 +125,7 @@ div#linecut {
 }
 
 div.time_bubble {
-	width: 174px;
+	width: 172px;
 	height: 118px;
 	display: inline-block;
 	background-image:url('../img/time_bubble2.png');
@@ -164,6 +158,24 @@ header h1 {
 	font-size: 4.35em;
 	margin: 20px 0;
 	display: inline-block;
+	letter-spacing: 0.015em;
+    word-spacing: 0.25em;
+}
+
+header h2	 {
+	font-size: 4.35em;
+	margin: 20px 0;
+	display: inline-block;
+	letter-spacing: 0.015em;
+    word-spacing: 0.25em;
+}
+
+header h3	 {
+	font-size: 4.35em;
+	margin: 20px 0;
+	display: inline-block;
+	letter-spacing: 0.015em;
+    word-spacing: 0.25em;
 }
 
 header span {
@@ -358,16 +370,26 @@ aside {
 
 /* Articles Aside */
 /* **** HIER **** */
-article#home {
+article#hier_au_commencement {
 	header {
 	    margin: 20px 21%;
 
+	    h1, h2, h3 {
+	    	color: $hier;
+	    }
+
 		h1 {
-			color: $hier;
 			text-align: center;
 			line-height: 1.3em;	
 			width: 650px;
 		}
+
+		h2 {
+			text-align: center;
+			line-height: 1.3em;	
+			width: 650px;
+		}
+
 		span.baseline {
 			display: block;
 		    font-size: 1.2em;
@@ -400,7 +422,7 @@ article#home {
 /* **** HIER : L'INTERFACE GRAPHIQUE **** */
 article#hier_interface_graphique {
 	header {
-		h1 {
+		h3 {
 			color: $hier;
 			text-align: center;
 			line-height: 1.3em;	
@@ -442,6 +464,38 @@ article#hier_interface_graphique {
 }
 
 /* **** AUJOURDH'UI **** */
+article#denosjours {
+	header {
+		margin: 20px 21%;
+		h1, h2, h3 {
+	    	color: $aujourdhui;
+	    }
+	    h1 {
+			text-align: center;
+			line-height: 1.3em;	
+		}
+
+		h2 {
+			text-align: center;
+			line-height: 1.3em;	
+			width: 120%;
+		}
+
+		span.baseline {
+			display: block;
+		    font-size: 1.2em;
+		    font-style: italic;
+		    text-align: center;
+		    width: 650px;
+			margin: 0 9%;
+		    color: $text;
+		}
+	}
+
+}
+
+
+/* **** EDITIONS VOLUMIQUES **** */
 article#editions_volumiques {
 	z-index:998px;
 	background-position: fixed; 
@@ -458,6 +512,10 @@ article#editions_volumiques {
 		display: inline-block;
 		vertical-align: bottom;
 		margin-bottom: 30px;
+
+		h1, h2, h3 {
+	    	color: $aujourdhui;
+	    }
 	}
 
 	header h1 {
@@ -476,7 +534,6 @@ article#editions_volumiques {
 
 	header 	span.baseline {
     	display: inline-block;
-		margin-left: 145px;
 	}
 
 	p {
@@ -534,6 +591,12 @@ article#editions_volumiques {
 	}
 
 	div.content#realisations {
+		p.center {
+			span {
+				margin-left: 16px;
+				width: 100%;
+			}
+		}
 		aside {
 			margin-top: 50px;
 		}
