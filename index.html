@@ -6,96 +6,283 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Webquest - Interfaces - Gobelins CDNL 2013</title>
+        <title>Webquest - Interfaces Tangibles - Gobelins CDNL 2013</title>
         <meta name="description" content="Site explicatif dédié aux interfaces tangibles">
         <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/inte2.css"> -->
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
 
         <!-- Fonts -->
         <link rel="stylesheet" href="fonts/opensans.css">
+        <link rel="stylesheet" href="fonts/bebas.css">
 
-
-
-
+        <!-- JS -->
         <script src="js/vendor/jquery-1.8.2.min.js"></script>
-        <script src="js/jquery.scrollorama.js"></script>
-
+        <script type="text/javascript" src="js/jquery.event.drag-2.2.js"></script>
+        <script type="text/javascript" src="js/jquery.event.drop-2.2.js"></script>
 
     </head>
     <body>
-        <div class="wrapper">       
-            <h1 id="title">Tangible User Interfaces</h1>
-            <aside>
-                <nav>
-                    <h2>Navigation</h2>
-                    <ul>
-                        <li id="slide1">Past</li>
-                        <li id="slide2">Present</li>
-                        <li id="slide3">Future</li>
-                    </ul>
-                </nav>
-            </aside>
-            
-            <article class="scrollblock" id="slide1">
-                <h1 id="titre">WEEE</h1>
-
-                <section class="desc">
-                    <p>Description text</p>
-                </section>
-                <section class="animation">
-                    Animations
-                </section>
-            </article>
-
-            <article class="scrollblock" id="slide2">
-                <section class="desc">
-                    <p>Description text</p>
-                </section>
-                <section class="animation">
-                    Animations
-                </section>
-            </article>
-
-            <article class="scrollblock" id="slide3">
-                <section class="desc">
-                    <p>Description text</p>
-                </section>
-                <section class="animation">
-                    Animations
-                </section>
-            </article>
-
-            <div class="circle">
-                <p>Hello world.</p>
-            </div>
-        </div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is the placeholder of Webquest TUI :) (based on HTML5 Boilerplate <3)</p>
+        <div class="wrapper">  
+            <div class="articles">
 
-<script type="text/javascript">
-$(document).ready(function(){
+                <!--    HIER    -->
+                <section>
+                    <!-- INTRODUCTION -->
+                    <article class="scrollblock" id="home">    
+                        <div class="content">     
+                            <header>
+                                <h1 id="home">Aux commencements<br/>l’Interaction<br/>Homme-Machine</h1>
+                                <span class="baseline">Ces interfaces qui sont pour nous une évidence mais qui ont été le fruit de longs travaux de recherche, tant psychologiques et philosophiques que techniques. </span>
+                            </header>
+                            <div class="clearfix"></div>
 
-     var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
-                        scrollorama.animate('#titre',{ duration: 300, property:'zoom', end: 8 });
+                            <div id="linecut"></div>
+                            
+                            <p class="heading">
+                               A l’aube de l’informatique, les ordinateurs avaient pour rôle de faire des opérations mathématiques et la seule intéraction qui existait entre l’homme et la machine se limitait au branchement de cables reliant deux opérateurs qui effectuaient les calculs. Avec l’avancée technologique, l’homme s’est armé d’un désir profond de contrôle des calculs et de communication avec les appareils. Et c’est ainsi que, progressivement, des interfaces homme-machine virent le jour. Ces “IHM” sont encore aujourd’hui, 50 ans plus tard, la clé de l’intéraction entre l’homme et l’ordinateur.
+                            </p>
 
-            // assign function to add behavior for onBlockChange event
-            scrollorama.onBlockChange(function() {
-                console.log('scroll!');
-            });
+                            <aside class="placeholder">
+                                Illustration placeholder
+                            </aside>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                    </article>
+
+                    <div class="clearfix"></div>
+
+                    <!-- L'INTERFACE GRAPHIQUE -->
+                     <article class="scrollblock" id="hier_interface_graphique">    
+                        <div class="content">     
+                            <header>
+                                <div class="time_bubble">
+                                    <span id="year">1973</span>
+                                    <div id="line"></div>
+                                </div>
+                                <h1 id="home">L'interface graphique</h1>
+                                <span class="baseline">Interface en ligne de commande</span>
+                            </header>
+                            <div class="clearfix"></div>
+
+                            <div id="linecut"></div>
+                            
+                            <div class="animation">
+                                <p class="left">
+                                   C’est en 1973 que les interfaces graphiques telles que nous les connaissons aujourd’hui (un bureau avec des fenêtres et des icones) font leur apparition. 
+                                </p>
+
+                                <aside class="placeholder"> 
+                                    Illustration placeholder
+                                </aside>
+
+                                <p class="right">
+                                    Alan Key, en collaboration avec Xerox,  inventa la première station de travail dotée d’un clavier, d’une souris et d’un écran présentant cette fameuse interface graphique. Cet ordinateur, le Xerox Alto, est également l’une des premières machines destinée à un usage personnel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </article>
 
 
-})
-</script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                    <div class="clearfix"></div>
+
+                </section>
+
+                <!--    AUJOURD'HUI    -->
+                <section>
+
+                    <!-- EDITIONS VOLUMIQUES -->
+                    <article class="scrollblock" id="editions_volumiques">    
+                        <div class="content">     
+                            <header>
+                                <div class="time_bubble">
+                                    <span id="year">2009</span>
+                                    <div id="line"></div>
+                                </div>
+                                <h1 id="home">LES EDITIONS VOLUMIQUES</h1>
+                                <span class="baseline">Écrans capacitifs et encore conductible</span>
+                            </header>
+                            <div class="clearfix"></div>
+
+                            <div id="linecut"></div>
+                            <p class="heading">
+                                En 2009 Etienne Mineur et Bertrand Duplat fondent les éditions volumiques en suivant 
+    une philosophie bien précise : revenir au monde du papier en y inculpant tout ce qu'ils 
+    avaient pu apprendre du monde du design web, du jeu vidéo etc..
+                            </p>
+                            <p>
+                                <span class="title">Le concept</span>
+                            A eux deux ils mettent au point la reconnaissance d'objet sur écran capacitif. Il suffit que l'écran soit multitouch,
+    que les objets aient un tag réalisé avec de l'encre conductible pour que cela fonctionne. Sans aucune pile, avec seulement un objet lambda et le corps de l'utilisateur comme énergie l'objet est reconnu. Avec ce système l'écran capacitif reconnaît la position de l'objet 
+    et sa rotation.
+                            </p>
+
+                            <aside>
+                                <div class="animation">
+                                    <img id="livre" src="img/editions_volumiques/_concept_livre.png">
+                                    <img id="fleches" src="img/editions_volumiques/_concept_fleche.png">
+                                    <img id="ipad" src="img/editions_volumiques/_concept_ipad.png">
+                                </div>
+                            </aside>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="content" id="nouveauxjeux">     
+                            <img src="img/editions_volumiques/_nouveaujeux_illu.png" alt="">
+                            <aside>
+                                <p>
+                                    <span class="title">Les nouveaux jeux de plateau</span>
+                                Grâce au système d'encre conductible il est donc possible de jouer avec des cartes de papiers sur un device tel qu'un iPhone, iPad.<br/>
+    Par le biais de leurs expériences et de leurs différents projets les éditions volumiques récréent l'ambiance d'un jeu à plusieurs autours d'un même « plateau ».
+                                </p>
+                            </aside>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="sep"></div>
+
+                        <div class="content" id="realisations">     
+                            <p class="center">
+                                <span class="title">Réalisations des Éditions Volumiques</span>
+                                Déplacez les pions sur l’ipad pour plus de détails sur chacuns des jeux.
+                            </p>
+                            <aside class="full">
+                                <ul id="pions">
+                                    <li id="pion1">
+                                        <div class="drag">
+                                            <img src="img/editions_volumiques/_realisation_pion1.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">Spellshot</span>
+                                            <p>
+                                                Hasbro, Inc. © 2012<br/>
+                                                <a href="#hasbro_website">Voir le site</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li id="pion2">
+                                        <div class="drag">
+                                            <img src="img/editions_volumiques/_realisation_pion2.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">Monopoly zapped edition</span>
+                                            <p>
+                                                Hasbro, Inc. © 2012<br/>
+                                                <a href="#hasbro_website">Voir le site</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li id="pion3">
+                                        <div class="drag">
+                                            <img src="img/editions_volumiques/_realisation_pion3.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">BattleShip Zapped edition</span>
+                                            <p>
+                                                Hasbro, Inc. © 2012<br/>
+                                                <a href="#hasbro_website">Voir le site</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="animation">
+                                    <div id="ipad">
+                                        <div id="dropzone">&nbsp;</drop>
+                                        <div class="description">
+                                            <div id="pion1">
+                                                <span class="title center">Spellshot</span>
+                                                <p>Ce jeu de plateau est composé d’une application, de pions et de cartes reconnus par le système d’encre conductible.<br/>Les joueurs jouent le rôle de magiciens de la nature qui doivent concquérir le domaine des autres en plantant toutes sortes de graines magiques.</p>
+                                            </div>
+                                            <div id="pion2">
+                                                <span class="title center">Spellshot 2</span>
+                                                <p>2 Ce jeu de plateau est composé d’une application, de pions et de cartes reconnus par le système d’encre conductible.<br/>Les joueurs jouent le rôle de magiciens de la nature qui doivent concquérir le domaine des autres en plantant toutes sortes de graines magiques.</p>
+                                            </div>
+                                            <div id="pion3">
+                                                <span class="title center">Spellshot 3</span>
+                                                <p>3 Ce jeu de plateau est composé d’une application, de pions et de cartes reconnus par le système d’encre conductible.<br/>Les joueurs jouent le rôle de magiciens de la nature qui doivent concquérir le domaine des autres en plantant toutes sortes de graines magiques.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+
+                    </article>
+
+                    <div class="clearfix"></div>
+            
+                </section>
+
+                <!--    DEMAIN    -->
+                <section></section>
+
+                
+            </div> <!-- end div.articles -->
+
+            <!--    NAVIGATION      -->
+            <aside>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="#home" title="Home">Home</a></li>
+                        <li id="hier" class="hier"><a href="#hier" title="Hier">Hier</a></li>
+                        <li id="hier_1" class="hier inner active"><a href="#hier_1" title="Hier-1">Hier_1</a></li>
+                        <li id="hier_2" class="hier inner"><a href="#hier_2" title="Hier-2">Hier_2</a></li>
+                        <li id="hier_3" class="hier inner"><a href="#hier_3" title="Hier-3">Hier_3</a></li>
+                        <li id="hier_4" class="hier inner"><a href="#hier_4" title="Hier-4">Hier_4</a></li>
+
+                        <li id="aujourdhui"><a href="#aujourdhui" title="Aujourd'hui">De nos jours</a></li>
+                        <li id="aujourdhui_1" class="aujourdhui inner active"><a href="#aujourdhui_1" title="Aujourd'hui-1">Aujourd'hui_1</a></li>
+                        <li id="aujourdhui_2" class="aujourdhui inner"><a href="#aujourdhui_2" title="Aujourd'hui-2">Aujourd'hui_2</a></li>
+                        <li id="aujourdhui_3" class="aujourdhui inner"><a href="#aujourdhui_3" title="Aujourd'hui-3">Aujourd'hui_3</a></li>
+                        <li id="aujourdhui_4" class="aujourdhui inner"><a href="#aujourdhui_4" title="Aujourd'hui-4">Aujourd'hui_4</a></li>
+
+                        <li id="demain"><a href="#demain" title="Demain">Demain</a></li>
+                        <li id="demain_1" class="demain inner active"><a href="#demain_1" title="Demain-1">Demain_1</a></li>
+                        <li id="demain_2" class="demain inner"><a href="#demain_2" title="Demain-2">Demain_2</a></li>
+                        <li id="demain_3" class="demain inner"><a href="#demain_3" title="Demain-3">Demain_3</a></li>
+                        <li id="demain_4" class="demain inner"><a href="#demain_4" title="Demain-4">Demain_4</a></li>
+
+                        <li id="credits"><a href="#credits" title="Credits">Credits</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+        </div>  <!-- end div.wrapper -->
+
+        <script type="text/javascript" src="js/main.js"/> 
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-35902643-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     
     </body>
 </html>

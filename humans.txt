@@ -2,14 +2,19 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
+	TEAM Gobelins CDNL 2013 - TUI
+	Maurel Jérémy	-- design -- 
+	Moyse Sophie	-- design --
+	Taloc Léa	-- design --
+	Garnier Nicolas -- dev    --
+	Lucas Heymès	-- dev    -- @ltb_lucas
 
 # THANKS
 
-    <name>
+	All other teams, Gobelins & CDNL
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+   	HTML5 (+HTML5 Boiletplate)
+	CSS3 (Compass)
+   	jQuery
