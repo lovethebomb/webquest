@@ -189,6 +189,13 @@ header 	span.baseline {
 	margin-left: 175px;
 }
 
+span.title {
+	color: black;
+	display: block;
+	font-size: 1.3em;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
 
 /* Navigation */
 /* Rollover bg : #474745 */
@@ -494,6 +501,14 @@ article#denosjours {
 
 	div#linecut {
 		 margin: 40px 49%;
+	}
+
+	p.heading {
+		width: 40%;
+	}
+
+	aside {
+		width: 60%;
 	}
 }
 
