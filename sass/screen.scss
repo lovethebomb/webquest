@@ -650,12 +650,131 @@ article#pixel_sense {
 	}
 
 	aside {
-		height: 300px;
+		margin-top: 30px;
 		div.animation {
 			background: url('../img/reactable/reactable.gif') center center no-repeat;
 			display: block;
 			height: 341px;
 			width: 341px;
+		}
+
+		div#surface {
+			background:url('../img/pixel_sense/_pixelsense_table.png') center center no-repeat;
+			width: 628px;
+			height: 428px;
+			display: inline-block;
+			div#text {
+				background:url('../img/pixel_sense/_pixelsense_fleche.png') center center no-repeat;
+				width: 201px;
+				height: 104px;
+				left: 210px;
+				position: relative;
+				top: 160px;				
+			}
+
+			div.dropzone {
+			    height: 368px;
+			    left: 30px;
+			    position: relative;
+			    top: -74px;
+			    width: 568px;
+			}
+			div.description {
+				position: relative;
+			    left: 205px;
+				position: relative;
+    			top: -410px;
+    			width: 390px;
+    			height: 330px;
+    			overflow: hidden;
+				div {
+					display: block;
+					-webkit-transition: opacity 0.5s ease-out;
+					transition: opacity 0.5s ease-out;
+					opacity: 0; 
+					height: 0;
+				}
+
+				div#crayon {
+					left: 20%;
+				    position: relative;
+				    top: 35%;
+				}
+				div.active {
+					opacity: 1;
+					height: auto;
+				}
+			}
+
+
+
+		}
+		div#objets {
+			width: 36%;
+			float: right;
+
+			ul {
+				list-style-type: none;
+
+
+				li div.drag {
+					z-index: 110;
+					position: absolute;
+				}
+
+				li div.drag:hover {
+					cursor: move;
+				}
+
+				li div.drag.dropped:hover {
+					cursor: default;
+				}
+
+				li#crayon {
+					width: 21px;
+					height: 143px;
+					margin-left: 49px;
+				    img {
+				    	transform: rotate(310deg);
+				    }
+				    div.dropped {
+				    	img {
+				    		transform: none;
+				    	}
+				    }
+				}
+
+				li#card {
+					width: 69px;
+					height: 112px;
+				    margin-left: 200px;
+   					margin-top: -28px;
+				    img {
+				    	transform: rotate(20deg);
+				    }
+				    div.dropped {
+				    	img {
+				    		transform: none;
+				    	}
+				    }
+
+				}
+
+				li#portable {
+					width: 87px;
+					height: 156px;
+					margin-left: 21px;
+    				margin-top: -39px;
+				    img {
+				    	transform: rotate(350deg);
+				    }
+				    div.dropped {
+				    	img {
+				    		transform: none;
+				    	}
+				    }
+				}
+			}
 		}
 	}
 }
@@ -766,13 +885,24 @@ article#editions_volumiques {
 		aside {
 			margin-top: 50px;
 		}
+
+		div#fleche_pointille {
+			background:url('../img/editions_volumiques/_realisation_fleche_pointilles.png') center center no-repeat;
+			width: 323px;
+			height: 124px;
+			left: 154px;
+		    position: relative;
+		    top: 270px;
+		}
+
 		ul#pions {
-			width: 50%;
+			width: 47%;
 			float: left;
+			
 			li {
 				background-repeat: no-repeat;
 				overflow: hidden;
-				margin: 50px 0px;
+				margin: 5px 0 100px;
 
 				div.drag {
 					z-index: 110;
@@ -808,6 +938,14 @@ article#editions_volumiques {
 			li#pion2 {
 				height: 155px;
 				background-image: url('../img/editions_volumiques/_realisation_pion2_trou.png');
+				div#pointilles {
+					background: url('../img/editions_volumiques/_realisation_contours_pointilles.png') center center no-repeat;
+					width: 125px;
+					height: 166px;
+					display: block;
+					position: absolute;
+					margin: -7px 0 0 -7px;
+				}
 			}
 
 			li#pion3 {
@@ -837,7 +975,7 @@ article#editions_volumiques {
 				div.description {
 					top: 250px;
 					position: relative;
-
+					overflow: hidden;
 					span.title {
 						font-size: 1.3em;
 						color: $aujourdhui;
@@ -853,8 +991,8 @@ article#editions_volumiques {
 
 					div {
 						display: block;
-						-webkit-transition: opacity 1s ease-out;
-						transition: opacity 1s ease-out;
+						-webkit-transition: opacity 0.5s ease-out;
+						transition: opacity 0.5s ease-out;
 						opacity: 0; 
 						height: 0;
 					}
@@ -865,9 +1003,67 @@ article#editions_volumiques {
 				}
 			}
 		}
-
 	}
 }
+	/* **** COMMERCIALISATION **** */
+article#commercialisation {
+	header h3 {
+		color: $aujourdhui;
+	}
+
+	p.left {
+		width: 35%;
+		margin-top: 60px;
+	}
+
+	p.right {
+		width: 30%;
+	}
+
+	p {
+		span.title {
+    		font-size: 1.3em;
+    	}
+
+    	a.small {
+			font-size: 0.85em;
+		}
+	}
+
+	aside {
+		img#cache {
+			z-index: 120;
+			left: -30px;
+		    position: relative;
+		    top: 30px;
+		}
+		div#epawn_shadow {
+			width: 504px;
+			height: 50px;
+			background-image: url('../img/commercialisation/_epawn_shadow.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		div.animation {
+			background-image: url('../img/commercialisation/_epawn_bleu.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 495px;
+			height: 311px;
+		}
+		div.animation div {
+			width: 53px;
+			height: 90px;
+			left: 437px;
+		    position: relative;
+		    top: 148px;
+		}
+		div.animation div:hover {
+			cursor: pointer;
+		}
+	}
+}
+
 
 /* Animations */
 @keyframes levitate {
