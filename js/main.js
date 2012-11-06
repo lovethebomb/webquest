@@ -170,4 +170,39 @@
                 $( this ).removeClass("active");
         });
     }); 
+
+	/* LES ENJEUX - Click */
+	$('ul#pieces li img').click(function() {
+		console.log('clickon');
+		id = $(this).parent().attr('id');
+		$('div#tablette div.description div.active').removeClass('active');
+		$('div#tablette div.description div#mini_' + id).addClass('active');
+		$('div#tablette div.description div#illu_' + id).addClass('active');
+
+		$('ul#pieces li img.desactivate').removeClass('desactivate');
+		$(this).addClass('desactivate');
+	});
+
+	/* LES ENJEUX - Mouse follow */
+	$('div#table').mousemove(function(e){
+		yTop = $(this).position().top;
+		xTop = $(this).position().left;
+		degree = (((e.pageY-yTop)/2)-(e.pageY-yTop)+100)*0.1;
+		left = ((e.pageX/(e.pageX-1))-1)*100;
+
+		oldValue = $('div#main').css('left');
+		if(left < 0.16)	{
+			newValue = parseFloat(oldValue)+parseFloat(left);
+		} else {
+			newValue = parseFloat(oldValue)-parseFloat(left);
+		} 
+		
+		$('div#main').css({ 'left': ' '+ newValue + 'px'});
+
+		if((degree > -20) && (degree < 14)) {
+			$('div#main').css({ 'transform':'rotate(' + degree + 'deg)'});
+		} else {
+			return false;
+		}
+	});
 });

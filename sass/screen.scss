@@ -511,9 +511,29 @@ article#hier_au_commencement {
 	aside {
 		float: right;
     	width: 40%;
-	}
-	aside.placeholder {
-		height: 300px;
+
+    	div.animation {
+    		div {
+    			display: inline-block;
+    		}
+    		div#tete {
+    			background: url('../img/hiroshii/_hiroshii_tete.png') center center no-repeat;
+				height: 183px;
+			    left: 70px;
+				position: relative;
+				top: -462px;
+				width: 281px;
+				 animation: 10s linear 0s alternate none infinite hiroshii;
+				-webkit-animation: 10s linear 0s alternate none infinite hiroshii;
+    		}
+
+    		div#corps {
+    			background: url('../img/hiroshii/_hiroshii_corps.png') center center no-repeat;
+    			width: 406px;
+    			height: 375px;
+
+    		}
+    	}
 	}
 
 	div#linecut {
@@ -651,6 +671,7 @@ article#pixel_sense {
 
 	aside {
 		margin-top: 30px;
+		height: 600px;
 		div.animation {
 			background: url('../img/reactable/reactable.gif') center center no-repeat;
 			display: block;
@@ -1005,7 +1026,8 @@ article#editions_volumiques {
 		}
 	}
 }
-	/* **** COMMERCIALISATION **** */
+
+/* **** COMMERCIALISATION **** */
 article#commercialisation {
 	header h3 {
 		color: $aujourdhui;
@@ -1064,6 +1086,199 @@ article#commercialisation {
 	}
 }
 
+/* **** LES ENJEUX **** */
+article#enjeux {
+	header {
+
+		div.time_bubble {
+			background-image: url("../img/enjeux.png");
+			
+		}
+
+		h3 {
+			color: $aujourdhui;
+		}
+		span.baseline {
+			display: block;
+		}
+	}
+
+	blockquote {
+		color: $aujourdhui;
+		width: 650px;
+		padding: 0 18%;
+		line-height: 1.2em;
+		font-size: 2em;
+
+		span.author {
+			display: block;
+			margin-top: 10px;
+			font-size: 0.5em;
+			font-family: "Helvetica", "Arial", sans-serif;
+			letter-spacing: 0.03em;
+			text-align: right;
+			strong {
+				font-style: normal;
+				font-weight: 700;
+				color: $faux_noir;
+			}
+			color: $text;
+		}
+	}
+	blockquote:after {
+		left: 280px;
+	    top: -30px;
+	}
+
+	blockquote:before {
+		left: -350px;
+	}
+
+	p.left {
+		width: 30%;
+		margin-top: 60px;
+	}
+
+	p.right {
+		width: 40%;
+		margin-top: 40px;
+	}
+
+	p.heading {
+		font-style: italic;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+	p {
+		span.title {
+    		font-size: 1.3em;
+    	}
+
+    	a.small {
+			font-size: 0.85em;
+		}
+	}
+
+	aside.left {
+		width: 530px;
+		height: 400px;
+		margin-left: 50px;
+		div.animation {
+			div#tablette {
+				width: 245px;
+				height: 346px;
+				background: url('../img/enjeux_educ/_enjeuxeduc_ipad.png') center center no-repeat;
+				display: inline-block;
+
+				div.description {
+					overflow: hidden;
+					width: 245px;
+					height: 270px;
+					div {
+						display: block;
+						-webkit-transition: opacity 0.5s ease-out;
+						transition: opacity 0.5s ease-out;
+						height: 0;
+						opacity: 0;
+					}
+
+					div.active {
+						opacity: 1;
+						height: auto;
+					}
+					div#mini_lapin {
+						margin-left: 100px;
+    					margin-top: 30px;
+					}
+
+					div#illu_lapin {
+						margin-left: 60px;
+    					margin-top: 30px;
+    					margin-bottom: 10px;
+					}
+
+					div#mini_renard {
+						margin-left: 100px;
+    					margin-top: 0;
+					}
+
+					div#illu_renard {
+						margin-left: 40px;
+    					margin-top: 0px;
+					}
+				}
+			}
+
+			ul#pieces {
+				vertical-align: top;
+				display: inline-block;
+				list-style-type: none;
+					margin-left: 50px;
+
+				li {
+					margin-bottom: 30px;
+					img {
+						-webkit-transition: opacity 0.5s ease-out;
+						transition: opacity 0.5s ease-out;
+						opacity: 1;
+					}
+					img.desactivate {
+						opacity: 0;
+					}
+				}				
+
+				li:hover {
+					cursor: pointer;
+				}
+
+				li#lapin{
+					width: 88px;
+					height: 136px;
+					background: url('../img/enjeux_educ/_enjeuxeduc_trou_lapin.png') center center no-repeat;
+				}
+
+				li#renard{
+					width: 94px;
+					height: 126px;
+					background: url('../img/enjeux_educ/_enjeuxeduc_trou_renard.png') center center no-repeat;
+				}
+			}
+		}
+	}
+
+	aside.right {
+		width: 60%;
+		div.animation {
+			div {
+				display: inline-block;
+				float: left;
+			}
+			div#table {
+				background: url('../img/enjeux_pro/_enjeuxpro_table.png') center center no-repeat;
+				height: 251px;
+				width: 338px;
+			}
+			div#main {
+				background: url("../img/enjeux_pro/_enjeuxpro_main.png") no-repeat scroll center center transparent;
+				height: 136px;
+				left: 170px;
+				position: relative;
+				top: -190px;
+				width: 405px;
+				z-index: 101;
+			}
+			div#cache {
+				background: url("../img/enjeux_pro/_enjeuxpro_cache.png") no-repeat scroll center center transparent;
+				height: 230px;
+				left: 120px;
+				position: relative;
+				top: -220px;
+				width: 81px;
+				z-index: 102;
+			}
+		}
+	}
+}
 
 /* Animations */
 @keyframes levitate {
@@ -1100,5 +1315,23 @@ article#commercialisation {
     }
     to   {
     	-webkit-transform: rotate(0);
+    }
+}
+
+@keyframes hiroshii {
+    from {
+    	transform: rotate(-10deg);
+    }
+    to   {
+    	transform: rotate(10deg);
+    }
+}
+
+@-webkit-keyframes hiroshii {
+    from {
+    	transform: rotate(-10deg);
+    }
+    to   {
+    	transform: rotate(10deg);
     }
 }
