@@ -7,7 +7,8 @@
 /* Colors */
 $hier: #fbbb27;
 $aujourdhui: #e64552;
-$demain: #3fa9f5;
+$demain: #42c1c7;
+$old_demain: #3fa9f5;
 $faux_noir: #181818;
 $text: #8d8a82;
 
@@ -202,7 +203,7 @@ span.title {
 }
 
 a.small:before {
-	background: url('../img/link.png') no-repeat center center #FFF3DF;
+	background: url('../img/link_red.png') no-repeat center center #FFF3DF;
 	width: 32px;
 	height: 32px;
 	border-bottom: none;
@@ -252,7 +253,7 @@ aside {
 		position: fixed;
 		right: 2%;
 		top: 0px;
-		padding-top: 5%;
+		padding-top: 8%;
 		background:  url('../img/nav_bg_filet.png') repeat-y center;
 		height: 100%;
 
@@ -357,6 +358,20 @@ aside {
 			margin-top: 15px;
 		}
 
+		ul li#aujourdhui_2 {
+			div.tooltip {
+				width: 100px;
+				left: -110px;
+			}
+		}
+
+		ul li#aujourdhui_3 {
+			div.tooltip {
+				width: 120px;
+				left: -130px;
+			}
+		}
+
 		ul li.aujourdhui.inner.active a {
 			background-image: url('../img/nav/aujourdhui_active.png');
 		}
@@ -376,6 +391,22 @@ aside {
 
 		ul li.demain.inner.active a {
 			background-image: url('../img/nav/futur_active.png');
+		}
+
+		/* Credits */
+		ul li#credits {
+			height: 50px;
+			margin-left: 8px;
+			a {
+				height: 70px;
+				width: 17px;
+				background-size: 17px !important;
+				background-image: url('../img/nav/introp-credits.png');
+
+				div.tooltip {
+					margin-top: 0px;
+				}
+			}
 		}
 
 		/* Tooltips generic */
@@ -519,21 +550,23 @@ article#hier_au_commencement {
     		div {
     			display: inline-block;
     		}
+
     		div#tete {
     			background: url('../img/hiroshii/_hiroshii_tete.png') center center no-repeat;
-				height: 183px;
-			    left: 70px;
+				height: 117px;
+			    left: 40px;
 				position: relative;
-				top: -462px;
-				width: 281px;
-				 animation: 10s linear 0s alternate none infinite hiroshii;
-				-webkit-animation: 10s linear 0s alternate none infinite hiroshii;
+				top: -302px;
+				width: 179px;
+				animation: 2s linear 0s alternate none infinite hiroshii;
+				-webkit-animation: 2s linear 0s alternate none infinite hiroshii;
+				-moz-animation: 2s linear 0s alternate none infinite hiroshii;
     		}
 
     		div#corps {
     			background: url('../img/hiroshii/_hiroshii_corps.png') center center no-repeat;
-    			width: 406px;
-    			height: 375px;
+    			width: 259px;
+    			height: 240px;
 
     		}
     	}
@@ -714,6 +747,7 @@ article#pixel_sense {
 				div {
 					display: block;
 					-webkit-transition: opacity 0.5s ease-out;
+					-moz-transition: opacity 0.5s ease-out;
 					transition: opacity 0.5s ease-out;
 					opacity: 0; 
 					height: 0;
@@ -890,6 +924,7 @@ article#editions_volumiques {
 				margin-left: -155px;
 				animation: rotate 6s infinite linear;
 				-webkit-animation: rotate 6s infinite linear;
+				-moz-animation: rotate 6s infinite linear;
 				position: relative;
 			}
 
@@ -1021,6 +1056,7 @@ article#editions_volumiques {
 						display: block;
 						-webkit-transition: opacity 0.5s ease-out;
 						transition: opacity 0.5s ease-out;
+						-moz-transition: opacity 0.5s ease-out;
 						opacity: 0; 
 						height: 0;
 					}
@@ -1185,6 +1221,7 @@ article#enjeux {
 						display: block;
 						-webkit-transition: opacity 0.5s ease-out;
 						transition: opacity 0.5s ease-out;
+						-moz-transition: opacity 0.5s ease-out;
 						height: 0;
 						opacity: 0;
 					}
@@ -1211,7 +1248,7 @@ article#enjeux {
 
 					div#illu_renard {
 						margin-left: 40px;
-    					margin-top: 0px;
+    					margin-top: -10px;
 					}
 				}
 			}
@@ -1227,6 +1264,7 @@ article#enjeux {
 					img {
 						-webkit-transition: opacity 0.5s ease-out;
 						transition: opacity 0.5s ease-out;
+						-moz-transition: opacity 0.5s ease-out;
 						opacity: 1;
 					}
 					img.desactivate {
@@ -1287,7 +1325,131 @@ article#enjeux {
 	}
 }
 
+/* **** DEMAIN **** */
+article#demain {
+	header {
+		margin: 20px 21%;
+		h1, h2, h3 {
+	    	color: $demain;
+	    }
+	    h1 {
+			text-align: center;
+			line-height: 1.3em;	
+		}
+
+		h2 {
+			text-align: center;
+			line-height: 1.3em;	
+			width: 120%;
+		}
+
+		span.baseline {
+			display: block;
+		    font-size: 1.2em;
+		    font-style: italic;
+		    text-align: center;
+		    width: 670px;
+			margin: 0;
+		    color: $text;
+		}
+	}
+
+	a.small {
+		font-size: 0.85em;
+	}
+	a.small:before {
+		background-image: url('../img/link_blue.png');
+	}
+	div#linecut {
+		 margin: 40px 49%;
+		 background-color: $demain;
+	}
+
+	p.heading {
+	 	display: inline-block;
+	    margin-left: 40px;
+	    margin-top: 50px;
+	    width: 36%;
+	    a {
+	    	font-size: 0.85em;
+	    }
+	}
+
+	aside {
+		width: 50%;
+		div.animation {
+		}
+	}
+
+	aside.left {
+		width: 424px;
+		height: 409px;
+		background:url('../img/futur/bacasable.png') center center no-repeat;
+		margin-left: 70px;
+	}
+
+	div#kinect {
+		width: 278px;
+		height: 58px;
+		background:url('../img/futur/kinect.png') center center no-repeat;
+		left: 140px;
+		position: relative;
+		top: -84px;
+	}
+
+	p.right {
+		width: 40%;
+		margin-top: 70px;
+	}
+
+	p#organic {
+		margin-top: -40px;
+	}
+
+	p#natural {
+		width: 40%;
+	}
+
+	blockquote {
+		color: $demain;
+		width: 410px;
+		padding: 0;
+		line-height: 1.2em;
+		font-size: 2em;
+		display: inline-block;
+		margin-top: -40px;
+
+		span.author {
+			display: block;
+			margin-top: 60px;
+			font-size: 0.5em;
+			font-family: "Helvetica", "Arial", sans-serif;
+			letter-spacing: 0.03em;
+			text-align: center;
+			strong {
+				font-style: normal;
+				font-weight: 700;
+				color: $faux_noir;
+			}
+			color: $text;
+		}
+	}
+	blockquote:after {
+		color: $faux_noir;
+		left: -10px;
+    	top: -40px;
+	}
+
+	blockquote:before {
+		color: $faux_noir;
+		left: -350px;
+    	left: 0;
+    	top: 20px;
+    }
+}
+
 /* Animations */
+/* Levitate */
 @keyframes levitate {
     from {
     	margin-top: 80px;
@@ -1306,7 +1468,16 @@ article#enjeux {
     }
 }
 
+@-moz-keyframes levitate {
+    from {
+    	margin-top: 80px;
+    }
+    to   {
+    	margin-top: 50px;
+    }
+}
 
+/* Rotate */
 @keyframes rotate {
     from {
     	transform: rotate(359deg);
@@ -1325,6 +1496,16 @@ article#enjeux {
     }
 }
 
+@-moz-keyframes rotate {
+    from {
+    	-moz-transform: rotate(359deg);
+    }
+    to   {
+    	-moz-transform: rotate(0);
+    }
+}
+
+/* Hiroshii */
 @keyframes hiroshii {
     from {
     	transform: rotate(-10deg);
@@ -1336,9 +1517,18 @@ article#enjeux {
 
 @-webkit-keyframes hiroshii {
     from {
-    	transform: rotate(-10deg);
+    	-webkit-transform: rotate(-10deg);
     }
     to   {
-    	transform: rotate(10deg);
+    	-webkit-transform: rotate(10deg);
+    }
+}
+
+@-moz-keyframes hiroshii {
+    from {
+    	-moz-transform: rotate(-10deg);
+    }
+    to   {
+    	-moz-transform: rotate(10deg);
     }
 }
