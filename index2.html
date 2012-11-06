@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- <link rel="stylesheet" href="css/inte2.css"> -->
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
         <!--[if IE]>
             <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -30,6 +31,7 @@
         <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.event.drag-2.2.js"></script>
         <script type="text/javascript" src="js/jquery.event.drop-2.2.js"></script>
+        <link href="stylesheets/nico.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     </head>
     <body>
@@ -38,10 +40,9 @@
         <![endif]-->
 
         <div class="wrapper">  
-            <div class="articles">
+           
                 <!--    HOME -->
-                <section>
-                    <article class="scrollblock" id="home">
+                    <article class="scrollblock fullheightarticle" id="home">
                         <div class="content">     
                             <header>
                                 <h1>Les Interfaces Tangibles</h1>
@@ -67,12 +68,12 @@ numérique, la perception des interactions et des usages.
                         </div>
                         <div class="clearfix"></div>
                     </article>
-                </section>
+               
 
                 <!--    HIER    -->
-                <section>
+               
                     <!-- AU COMMENCEMENT -->
-                    <article class="scrollblock" id="hier_au_commencement">    
+                    <article class="scrollblock fullheightarticle" id="hier_au_commencement">    
                         <div class="content">     
                             <header>
                                 <h2>Aux commencements<br/>l’Interaction<br/>Homme-Machine</h2>
@@ -86,11 +87,8 @@ numérique, la perception des interactions et des usages.
                                A l’aube de l’informatique, les ordinateurs avaient pour rôle de faire des opérations mathématiques et la seule intéraction qui existait entre l’homme et la machine se limitait au branchement de cables reliant deux opérateurs qui effectuaient les calculs. Avec l’avancée technologique, l’homme s’est armé d’un désir profond de contrôle des calculs et de communication avec les appareils. Et c’est ainsi que, progressivement, des interfaces homme-machine virent le jour. Ces “IHM” sont encore aujourd’hui, 50 ans plus tard, la clé de l’intéraction entre l’homme et l’ordinateur.
                             </p>
 
-                            <aside>
-                                <div class="animation">
-                                    <div id="corps">&nbsp;</div>
-                                    <div id="tete">&nbsp;</div>
-                                </div>
+                            <aside class="placeholder">
+                                Illustration placeholder
                             </aside>
                         </div>
                         <div class="clearfix"></div>
@@ -99,16 +97,17 @@ numérique, la perception des interactions et des usages.
 
                     <div class="clearfix"></div>
 
-                    <!-- L'INTERFACE GRAPHIQUE -->
-                     <article class="scrollblock" id="hier_interface_graphique">    
+                    <!-- MONITEUR -->
+
+                     <article class="scrollblock fullheightarticle" id="hier_moniteur">    
                         <div class="content">     
                             <header>
                                 <div class="time_bubble">
                                     <span id="year">1973</span>
                                     <div id="line"></div>
                                 </div>
-                                <h3>L'interface graphique</h3>
-                                <span class="baseline">Interface en ligne de commande</span>
+                                <h3>Le moniteur</h3>
+                                
                             </header>
                             <div class="clearfix"></div>
 
@@ -116,25 +115,21 @@ numérique, la perception des interactions et des usages.
                             
                             <div class="animation">
                                 <p class="left">
-                                   C’est en 1973 que les interfaces graphiques telles que nous les connaissons aujourd’hui (un bureau avec des fenêtres et des icones) font leur apparition. 
+                                   A l’origine, les résultats des calculs informatiques étaient imprimés sur papier ou présentés sous forme de cartes perforées. L’introduction des écrans à tube cathodique permet alors une visualisation plus rapide des informations. 
                                 </p>
 
-                                <aside class="placeholder"> 
+                                <!--<aside class="placeholder"> 
                                     Illustration placeholder
-                                </aside>
+                                </aside>-->
 
                                 <p class="right">
-                                    Alan Key, en collaboration avec Xerox,  inventa la première station de travail dotée d’un clavier, d’une souris et d’un écran présentant cette fameuse interface graphique. Cet ordinateur, le Xerox Alto, est également l’une des premières machines destinée à un usage personnel.
+                                    Plus tard, l’écran servira également d’interface où l’utilisateur peut contrôler ce qu’il communique à l’ordinateur, notamment via un clavier.
                                 </p>
                             </div>
                         </div>
 
                         <div class="clearfix"></div>
                     </article>
-
-
-                    <div class="clearfix"></div>
-
 
                     <!-- LE CLAVIER -->
                      <article class="scrollblock fullheightarticle" id="hier_clavier">    
@@ -153,7 +148,7 @@ numérique, la perception des interactions et des usages.
                             
                             <div class="animation">
                                 <p class="left">
-                                    Les claviers informatiques, descendants du t√©l√©scripteur et de la machine √† √©crire, arrivent en m√™me temps que les interfaces en ligne de commande. Finie la saisie sur carte perfor√©e : dor√©navent, les r√©sultats des calculs s‚Äôaffichent en direct et non plus imprim√©s sur papier. Ainsi, l‚Äôordinateur communique ses r√©sultats √† l‚Äôutilisateur gr√¢ce √† l‚Äô√©cran et l‚Äôutilisateur communique ses ordres √† l‚Äôordinateur gr√¢ce au clavier. Homme et machine peuvent enfin pleinement communiquer.
+                                    Les claviers informatiques, descendants du téléscripteur et de la machine à écrire, arrivent en même temps que les interfaces en ligne de commande. Finie la saisie sur carte perforée : dorénavent, les résultats des calculs s’affichent en direct et non plus imprimés sur papier. Ainsi, l’ordinateur communique ses résultats à l’utilisateur grâce à l’écran et l’utilisateur communique ses ordres à l’ordinateur grâce au clavier. Homme et machine peuvent enfin pleinement communiquer.
                                 </p>
 
                                 <!--<aside class="placeholder"> 
@@ -187,7 +182,7 @@ numérique, la perception des interactions et des usages.
                             
                             <div class="animation">
                                 <p class="left">
-                                   L‚Äôarriv√©e du lightpen au d√©but des ann√©es 1960 apporte une nouvelle dimension aux IHM. Il est d√©sormais possible de pointer directement un object √† l‚Äô√©cran, ce qui introduit un nouveau comportement utilisateur : alors que le clavier est associ√© au texte, le light pen est associ√© √† l‚Äôimage et √† l‚Äôobjet.
+                                   L’arrivée du lightpen au début des années 1960 apporte une nouvelle dimension aux IHM. Il est désormais possible de pointer directement un object à l’écran, ce qui introduit un nouveau comportement utilisateur : alors que le clavier est associé au texte, le light pen est associé à l’image et à l’objet.
                                 </p>
 
                                 <!--<aside class="placeholder"> 
@@ -216,14 +211,14 @@ numérique, la perception des interactions et des usages.
                             
                             <div class="animation">
                                 <p class="left">
-                                   La souris est invent√©e en 1963 par Douglas Engelbart. Le but de cet ing√©nieur √©tait de trouver un dispositif de pointage performant et ergonomique pour l‚Äôutilisateur. L‚Äôarriv√©e de la souris supprime l‚Äôinteractivit√© directe avec l‚Äô√©cran (via le Light Pen) et le cantonne d√©sormais √† un r√¥le d‚Äôaffichage.
+                                   La souris est inventée en 1963 par Douglas Engelbart. Le but de cet ingénieur était de trouver un dispositif de pointage performant et ergonomique pour l’utilisateur. L’arrivée de la souris supprime l’interactivité directe avec l’écran (via le Light Pen) et le cantonne désormais à un rôle d’affichage.
                                 </p>
 
                                 <!--<aside class="placeholder"> 
                                     Illustration placeholder
                                 </aside>-->
                                 <p class="right">
-                                    Bien que le concept de la souris soit purement abstrait (il n‚Äôy a aucune √©quivalence ce ce genre d‚Äôappareil avant l‚Äôinformatique), cette interface fais d√©sormais partie int√©grante de l‚Äôimaginaire associ√© √† l‚Äôordinateur.
+                                    Bien que le concept de la souris soit purement abstrait (il n’y a aucune équivalence ce ce genre d’appareil avant l’informatique), cette interface fais désormais partie intégrante de l’imaginaire associé à l’ordinateur.
                                 </p>
 
                             </div>
@@ -232,14 +227,47 @@ numérique, la perception des interactions et des usages.
                         <div class="clearfix"></div>
                     </article>
 
-                    
-                </section>
+                    <!-- L'INTERFACE GRAPHIQUE -->
+                     <article class="scrollblock fullheightarticle" id="hier_interface_graphique">    
+                        <div class="content">     
+                            <header>
+                                <div class="time_bubble">
+                                    <span id="year">1973</span>
+                                    <div id="line"></div>
+                                </div>
+                                <h3>L'interface graphique</h3>
+                            </header>
+                            <div class="clearfix"></div>
+
+                            <div id="linecut"></div>
+                            
+                            <div class="animation">
+                                <p class="left">
+                                   C’est en 1973 que les interfaces graphiques telles que nous les connaissons aujourd’hui (un bureau avec des fenêtres et des icones) font leur apparition. 
+                                </p>
+
+                                <!--<aside class="placeholder"> 
+                                    Illustration placeholder
+                                </aside>-->
+
+                                <p class="right">
+                                    Alan Key, en collaboration avec Xerox,  inventa la première station de travail dotée d’un clavier, d’une souris et d’un écran présentant cette fameuse interface graphique. Cet ordinateur, le Xerox Alto, est également l’une des premières machines destinée à un usage personnel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </article>
+
+
+                    <div class="clearfix"></div>
+
+               
 
                 <!--    AUJOURD'HUI    -->
-                <section>
                     <!-- DE NOS JOURS -->
 
-                    <article class="scrollblock" id="denosjours">    
+                    <article class="scrollblock fullheightarticle" id="denosjours">    
                         <div class="content">     
                             <header>
                                 <h2>Les interfaces tangibles<br/>de nos jours</h2>
@@ -268,7 +296,7 @@ numérique, la perception des interactions et des usages.
                     <div class="clearfix"></div>
 
                     <!-- PIXELSENSE -->
-                     <article class="scrollblock" id="pixel_sense">    
+                     <article class="scrollblock fullheightarticle" id="pixel_sense">    
                         <div class="content">     
                             <header>
                                 <div class="time_bubble">
@@ -299,44 +327,15 @@ Fin 2012 la table PixelSense Samsung-SUR40 fera son apparition sur le marché. E
                                 </p>
 
                                 <div class="clearfix"></div>
-                                <aside> 
-                                    <div id="surface">
-                                        <div id="text">&nbsp;</div>
-                                        <div class="dropzone"></div>
-                                        <div class="description">
-                                            <div id="portable">
-                                                <img src="img/pixel_sense/_pixelsense_reaction_portable.png" alt="">
-                                            </div>
-                                            <div id="crayon">
-                                                <img src="img/pixel_sense/_pixelsense_reaction_crayon.png" alt="">
-                                            </div>
-                                            <div id="card">
-                                                <img src="img/pixel_sense/_pixelsense_reaction_card.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="objets">
-                                        <ul>
-                                            <li id="crayon">
-                                                <div class="drag">
-                                                    <img src="img/pixel_sense/_pixelsense_crayon.png" alt="">
-                                                </div>
-                                            </li>
-                                             <li id="card">
-                                                <div class="drag">
-                                                    <img src="img/pixel_sense/_pixelsense_card.png" alt="">
-                                                </div>
-                                            </li>
-                                             <li id="portable"> 
-                                                <div class="drag">
-                                                    <img src="img/pixel_sense/_pixelsense_portable.png" alt="">  
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </aside>
-                                <div class="clearfix"></div>
 
+                                <aside class="placeholder"> 
+                                    <div id="surface">
+                                    </div>
+                                    <div>
+                                        Objets
+                                    </div>
+                                    Illustration placeholder
+                                </aside>
                         </div>
 
                         <div class="clearfix"></div>
@@ -394,15 +393,12 @@ Fin 2012 la table PixelSense Samsung-SUR40 fera son apparition sur le marché. E
 
                         <div class="sep"></div>
 
-                        <div class="content" id="realisations">
-                            <div class="center">
-                                <p class="center">
-                                    <span class="title center">Réalisations des Éditions Volumiques</span>
-                                    Déplacez les pions sur l’ipad pour plus de détails sur chacuns des jeux.
-                                </p>
-                            </div>
+                        <div class="content" id="realisations">     
+                            <p class="center">
+                                <span class="title center">Réalisations des Éditions Volumiques</span>
+                                Déplacez les pions sur l’ipad pour plus de détails sur chacuns des jeux.
+                            </p>
                             <aside class="full">
-                                <div id="fleche_pointille">&nbsp;</div>
                                 <ul id="pions">
                                     <li id="pion1">
                                         <div class="drag">
@@ -417,7 +413,6 @@ Fin 2012 la table PixelSense Samsung-SUR40 fera son apparition sur le marché. E
                                         </div>
                                     </li>
                                     <li id="pion2">
-                                        <div id="pointilles"></div>
                                         <div class="drag">
                                             <img src="img/editions_volumiques/_realisation_pion2.png" alt="">
                                         </div>
@@ -469,186 +464,47 @@ Fin 2012 la table PixelSense Samsung-SUR40 fera son apparition sur le marché. E
 
                     <div class="clearfix"></div>
 
-                    <!-- COMMERCIALISATION -->
-                    <article class="scrollblock" id="commercialisation">    
-                        <div class="content">     
-                            <header>
-                                <div class="time_bubble">
-                                    <span id="year">2011</span>
-                                    <div id="line"></div>
-                                </div>
-                                <h3>COMMERCIALISATION</h3>
-                                <span class="baseline">L’apparition des interfaces tangibles sur le marché</span>
-                            </header>
-                            <div class="clearfix"></div>
+                    
 
-                            <div id="linecut"></div>
-                            <p class="heading">
-                                En 2009 Etienne Mineur et Bertrand Duplat fondent les éditions volumiques en suivant 
-    une philosophie bien précise : revenir au monde du papier en y inculpant tout ce qu'ils 
-    avaient pu apprendre du monde du design web, du jeu vidéo etc..
-                            </p>
-                            
-                            <div class="clearfix"></div>
-
-                            <p class="left">
-                                <span class="title">Le studio de recherche de Disney sort Appmate</span>
-                                Le studio de recherche de Disney sortent fin 2011 les AppMates, des figurines qui interagissent avec une application sur iPad. L’application reconnait les différents types de voitures, ainsi que leur vitesse et leur position.
-Grâce a un système de scotch en métal les voitures deviennent objets tangibles sur l'iPad. L'enfant ne joue plus a un simple jeu avec ses mains, il utilise des vraies voitures sur un circuit virtuel.
-                                <br/><br/>
-                            <a class="small" href="#">En savoir plus</a>
-                                 </p>
-                            <aside class="right">
-                                <img src="img/commercialisation/disney_ac_fond.gif" alt="">
-                                <img id="cache" src="img/commercialisation/_disney_cache.png" alt="">
-                            </aside>
-
-                            <div class="clearfix"></div>
-                            <div class="sep"></div>
-
-                            <aside class="left">
-                                <div id="epawn" class="animation">
-                                    <div></div>
-                                    &nbsp;
-                                </div>
-                                <div id="epawn_shadow">&nbsp;</div>
-                            </aside>
-                            <p class="right">
-                                <span class="title">La technologie EPawn</span>
-                            Ce système utilise une table basée sur un sytème électromagnetique qui permet de reconnaître la position des pions posés sur cette surface.
-Les jeux se téléchargent sur un terminal mobile android 
-ou iOs, on connecte celui-ci a la table via un cable HDMI et par Wi-fi et le jeu peut commencer sur une surface<br/>
-de 26 pouces.
-Un système sans écran tout en gardant le principe des capteurs est en train d’être élaboré pour une vente low-cost au près des éditeurs de jeux de sociétés.
-                            <br/><br/>
-                            <a class="small" href="#">En savoir plus</a>
-                            </p>
-                            
-                        </div>
-                        <div class="clearfix"></div>
-                    </article>
-
-                    <!-- LES ENJEUX -->
-                    <article class="scrollblock" id="enjeux">    
-                        <div class="content">     
-                            <header>
-                                <div class="time_bubble">
-                                </div>
-                                <h3>LES ENJEUX</h3>
-                                <span class="baseline">Pourquoi miser sur ces nouvelles interfaces ?</span>
-                            </header>
-                            <div class="clearfix"></div>
-
-                            <div id="linecut"></div>
-                            <p class="heading">
-                                Cette nouvelle génération d'interfaces commence a arriver dans le monde éducatif et professionnel.
-                                <br/>Elle présente de nombreux bénéfices sociaux, cognitifs et physiques pour les différents utilisateurs.
-                            </p>
-                            
-                            <div class="clearfix"></div>
-
-                            <aside class="left">
-                                <div class="animation">
-                                    <div id="tablette">
-                                    <div class="description">
-                                        <div id="mini_lapin">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_mini_lapin.png" alt="">
-                                        </div>
-                                        <div id="mini_renard">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_mini_renard.png" alt="">
-                                        </div>
-                                        <div id="illu_lapin">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_illu_lapin.png" alt="">
-                                        </div>
-                                        <div id="illu_renard">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_illu_renard.png" alt="">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <ul id="pieces">
-                                        <li id="lapin">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_pion_lapin.png" alt="">
-                                        </li>
-                                        <li id="renard">
-                                            <img src="img/enjeux_educ/_enjeuxeduc_pion_renard.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-
-                            <p class="right">
-                                <span class="title">L’enjeu éducatif</span>
-                                Anne Marie Pipper & James Hollan ont réalisé une expérience au niveau éducatif à l'aide d'une table interactive prenant en compte les objets tangibles. 
-Elle a pu en conclure que les interfaces tangibles permettaient une meilleure communication entre les élèves, une compréhension plus facile de leurs erreurs. 
-Il est en effet prouvé que les enfants comme les adultes vont engendrer plus facilement des connaissances en passant par des objets en 3D et non en 2D.
-                                <br/><br/>
-                                <a class="small" href="#">En savoir plus</a>
-                                 </p>
-
-                            <div class="clearfix"></div>
-
-                            <blockquote>
-                                La nature tactile des objets offre un ressenti sensoriel qui optimise l'interaction.
-                                <span class="author"><strong>Sara Price - </strong>Senior Lecturer au Technology Enhanced Learning</span>
-                            </blockquote>   
-
-                            <p class="left">
-                                <span class="title">L’enjeu professionnel</span>
-                            Au niveau professionnel, les interfaces tangibles permettent une meilleure communication entre les professionnels mais aussi de réagir rapidement à une situation donnée ou en 
-temps normal il faut passer par des calculs sur un ordinateur. <br/>
-De plus il est plus facile d'expliquer une situation à un patient dans le cas de la médecine ou un client  dans un cas professionnel.
-                            </p>
-                            
-                            <aside class="right">
-                                <div class="animation">
-                                    <div id="table"></div>
-                                    <div id="main"></div>
-                                    <div id="cache"></div>
-                                </div>
-                            </aside>
-
-                        </div>
-                        <div class="clearfix"></div>
-                    </article>
-                </section>
+                   
+            
+                
 
                 <!--    DEMAIN    -->
-                <section>
-                
-                </section>
+                <section></section>
 
                 
             </div> <!-- end div.articles -->
 
+            <!--    NAVIGATION      -->
+            <aside>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="#home" title="Home">Home</a></li>
+                        <li id="hier" class="hier"><a href="#hier" title="Hier">Hier</a></li>
+                        <li id="hier_1" class="hier inner active"><a href="#hier_1" title="Hier-1">Hier_1</a></li>
+                        <li id="hier_2" class="hier inner"><a href="#hier_2" title="Hier-2">Hier_2</a></li>
+                        <li id="hier_3" class="hier inner"><a href="#hier_3" title="Hier-3">Hier_3</a></li>
+                        <li id="hier_4" class="hier inner"><a href="#hier_4" title="Hier-4">Hier_4</a></li>
+
+                        <li id="aujourdhui"><a href="#aujourdhui" title="Aujourd'hui">De nos jours</a></li>
+                        <li id="aujourdhui_1" class="aujourdhui inner active"><a href="#aujourdhui_1" title="Aujourd'hui-1">Aujourd'hui_1</a></li>
+                        <li id="aujourdhui_2" class="aujourdhui inner"><a href="#aujourdhui_2" title="Aujourd'hui-2">Aujourd'hui_2</a></li>
+                        <li id="aujourdhui_3" class="aujourdhui inner"><a href="#aujourdhui_3" title="Aujourd'hui-3">Aujourd'hui_3</a></li>
+                        <li id="aujourdhui_4" class="aujourdhui inner"><a href="#aujourdhui_4" title="Aujourd'hui-4">Aujourd'hui_4</a></li>
+
+                        <li id="demain"><a href="#demain" title="Demain">Demain</a></li>
+                        <li id="demain_1" class="demain inner active"><a href="#demain_1" title="Demain-1">Demain_1</a></li>
+                        <li id="demain_2" class="demain inner"><a href="#demain_2" title="Demain-2">Demain_2</a></li>
+                        <li id="demain_3" class="demain inner"><a href="#demain_3" title="Demain-3">Demain_3</a></li>
+                        <li id="demain_4" class="demain inner"><a href="#demain_4" title="Demain-4">Demain_4</a></li>
+
+                        <li id="credits"><a href="#credits" title="Credits">Credits</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
         </div>  <!-- end div.wrapper -->
-
-        <!--    NAVIGATION      -->
-        <aside>
-            <nav>
-                <ul>
-                    <li id="home"><a href="#home" title="Home">Home</a></li>
-                    <li id="hier" class="hier"><a href="#hier" title="Hier">Hier</a></li>
-                    <li id="hier_1" class="hier inner active"><a href="#hier_1" title="Hier-1">Hier_1</a></li>
-                    <li id="hier_2" class="hier inner"><a href="#hier_2" title="Hier-2">Hier_2</a></li>
-                    <li id="hier_3" class="hier inner"><a href="#hier_3" title="Hier-3">Hier_3</a></li>
-                    <li id="hier_4" class="hier inner"><a href="#hier_4" title="Hier-4">Hier_4</a></li>
-
-                    <li id="aujourdhui"><a href="#aujourdhui" title="Aujourd'hui">De nos jours</a></li>
-                    <li id="aujourdhui_1" class="aujourdhui inner active"><a href="#aujourdhui_1" title="Aujourd'hui-1">Aujourd'hui_1</a></li>
-                    <li id="aujourdhui_2" class="aujourdhui inner"><a href="#aujourdhui_2" title="Aujourd'hui-2">Aujourd'hui_2</a></li>
-                    <li id="aujourdhui_3" class="aujourdhui inner"><a href="#aujourdhui_3" title="Aujourd'hui-3">Aujourd'hui_3</a></li>
-                    <li id="aujourdhui_4" class="aujourdhui inner"><a href="#aujourdhui_4" title="Aujourd'hui-4">Aujourd'hui_4</a></li>
-
-                    <li id="demain"><a href="#demain" title="Demain">Demain</a></li>
-                    <li id="demain_1" class="demain inner active"><a href="#demain_1" title="Demain-1">Demain_1</a></li>
-                    <li id="demain_2" class="demain inner"><a href="#demain_2" title="Demain-2">Demain_2</a></li>
-                    <li id="demain_3" class="demain inner"><a href="#demain_3" title="Demain-3">Demain_3</a></li>
-                    <li id="demain_4" class="demain inner"><a href="#demain_4" title="Demain-4">Demain_4</a></li>
-
-                    <li id="credits"><a href="#credits" title="Credits">Credits</a></li>
-                </ul>
-            </nav>
-        </aside>
 
         <script type="text/javascript" src="js/main.js"/> 
 
@@ -662,6 +518,59 @@ De plus il est plus facile d'expliquer une situation à un patient dans le cas d
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+        </script>
+
+        <!-- Animations de la partie histoire -->
+
+        <script type="text/javascript">
+
+
+
+            jQuery(document).ready(function($) {
+
+                
+
+                
+
+                var topClavier = $("#clavier").offset().top;
+                var topLightpen = $("#lightpen").offset().top;
+                
+
+                var triggerClavier = 1;
+                var triggerLightpen = 1;
+
+                jQuery(document).scroll(function() {
+
+                var scroll = $(document).scrollTop();
+
+                if(scroll >= topClavier && triggerClavier == 1) {
+                    $('#clavierimg').animate({
+                        right: '+=500'
+                      }, 1300, function() {
+                        $('#clavierimg').fadeTo(0, 0);
+                        $('#clavier').css('background', 'url(monclav.png) no-repeat left center fixed');
+                      }
+                    );
+                    triggerClavier = 0;
+                };
+
+                if(scroll >= topLightpen && triggerLightpen == 1) {
+                    $('#lightpenimg').animate({
+                        left: '+=500'
+                      }, 1300 /*function() {
+                        $('#clavierimg').fadeTo(0, 0);
+                        $('#clavier').css('background', 'url(monclav.png) no-repeat left center fixed');
+                      }*/
+                    );
+                    triggerLightpen = 0;
+                };
+            });
+ 
+                $(".scroll").click(function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1700);
+                });
+            });
         </script>
     
     </body>

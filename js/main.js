@@ -5,7 +5,7 @@
         console.log('hovering ' + $(this).attr('title'));
         $(this).append('<div class="tooltip"><span>'+ $(this).attr('title') + '</span></div>');
     }, function() {
-        $('div .tooltip').remove();
+        $('div.tooltip').remove();
     });
 
     /* scrollTo */
