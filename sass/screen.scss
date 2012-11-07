@@ -255,7 +255,7 @@ aside {
 		position: fixed;
 		right: 2%;
 		top: 0px;
-		padding-top: 8%;
+		padding-top: 16%;
 		background:  url('../img/nav_bg_filet.png') repeat-y center;
 		height: 100%;
 
@@ -554,7 +554,7 @@ article#hier_au_commencement {
 
 	div#linecut {
 		background-color: $hier;
-		margin: 40px 43%;
+		margin: 40px 48%;
 	}
 }
 
@@ -684,8 +684,8 @@ article#hier_lightpen {
 		margin: 0;
 	}
 	p.left {
-		width: 30%;
 		float: left;
+		margin-top: 100px;
 	}
 
 	p.right {
@@ -751,6 +751,14 @@ article#hier_souris {
     	div.animation {
     		float: left;
     	}
+    	div#souris {
+    		background:url('../img/hier/pointeur2.gif') center center no-repeat;
+    		width: 230px;
+    		height: 203px;
+    		position: relative;
+    		left: 70px;
+		    top: -310px;
+    	}
 	}
 
 	aside.placeholder {
@@ -794,6 +802,14 @@ article#hier_interface_graphique {
     	width: 30%;
     	div.animation {
     		float: left;
+    	}
+    	div#gui {
+    		background:url('../img/hier/GUI4.gif') center center no-repeat;
+    		width: 230px;
+    		height: 203px;
+    		left: 80px;
+		    position: relative;
+		    top: -310px;
     	}
 	}
 
@@ -1371,6 +1387,10 @@ article#commercialisation {
 	p {
 		span.title {
     		font-size: 1.3em;
+    		color: black;
+		    display: block;
+		    font-weight: 700;
+		    padding-bottom: 10px;
     	}
 
     	a.small {
@@ -1906,7 +1926,7 @@ article#credits {
 					height: 149px;
 					width: 100px;
 					position: absolute;
-
+					z-index: 208;
 					span {
 						color: $faux_noir;
 						display: block;
@@ -1919,25 +1939,25 @@ article#credits {
 					background-image:url('../img/credits/jeremy.png');
 					left: 430px;
 					top: 10px;
-    				animation: 15s ease-in-out 0s normal none infinite circleJeremy;
-    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
-    				-moz-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
+//    				animation: 15s ease-in-out 0s normal none infinite circleJeremy;
+//    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
+//    				-moz-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
 				}
 				div#sophie {
 					background-image:url('../img/credits/sophie.png');
 				  	left: 130px;
     				top: -10px;
-    				animation: 15s ease-in-out 0s normal none infinite circleSophie;
-    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleSophie;
-    				-moz-animation: 15s ease-in-out 0s normal none infinite circleSophie;
+//    				animation: 15s ease-in-out 0s normal none infinite circleSophie;
+//    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleSophie;
+//    				-moz-animation: 15s ease-in-out 0s normal none infinite circleSophie;
 				}
 				div#lea {
 					background-image:url('../img/credits/lea.png');
 				   	left: 170px;
 				    top: 150px;
-    				animation: 15s ease-in-out 0s normal none infinite circleLea;
-    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLea;
-    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLea;
+//    				animation: 15s ease-in-out 0s normal none infinite circleLea;
+//    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLea;
+//    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLea;
     				span {
 						text-align: center;
 						width: 88px;
@@ -1947,17 +1967,17 @@ article#credits {
 					background-image:url('../img/credits/nicolas.png');
 				    left: 280px;
 				    top: -110px;
-    				animation: 15s ease-in-out 0s normal none infinite circleNicolas;
-    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
-    				-moz-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
+//    				animation: 15s ease-in-out 0s normal none infinite circleNicolas;
+//    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
+//    				-moz-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
 				}
 				div#lucas {
 					background-image:url('../img/credits/lucas.png');
 				   	left: 400px;
 				    top: 180px;
-    				animation: 15s ease-in-out 0s normal none infinite circleLucas;
-    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLucas;
-    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLucas;
+//    				animation: 15s ease-in-out 0s normal none infinite circleLucas;
+//    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLucas;
+//    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLucas;
 				}
 			}
 
@@ -1973,6 +1993,7 @@ article#credits {
 				left: 310px;
 				position: relative;
 				top: 90px;
+				z-index: 200;
 			}
 		}
 	}
