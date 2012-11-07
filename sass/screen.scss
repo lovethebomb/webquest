@@ -545,11 +545,11 @@ article#hier_au_commencement {
 	p.heading {
 		display: inline-block;
 		margin: 0;
-    	width: 40%;
+    	width: 50%;
 	}
 	aside {
 		float: right;
-    	width: 40%;
+    	width: 20%;
 	}
 
 	div#linecut {
@@ -558,10 +558,210 @@ article#hier_au_commencement {
 	}
 }
 
-/* **** HIER : Le moniteur **** */
+/* **** HIER : LE MONITEUR **** */
 article#hier_moniteur {
+	header {
+		h3 {
+			color: $hier;
+			text-align: center;
+			line-height: 1.3em;	
+		}
+		span.baseline {
+			display: block;
+		    font-size: 1.4em;
+		    font-style: normal;
+		}
+	}
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+	p.left {
+		width: 30%;
+		float: left;
+	}
 
+	p.right {
+		width: 30%;
+	}
+
+	aside {
+		display: inline-block;
+    	width: 30%;
+    	div.animation {
+    		float: left;
+    	}
+	}
+
+	aside.placeholder {
+		height: 200px;
+	}
+	div#linecut {
+		background-color: $hier;
+		margin-top: 30px;
+	}
 }
+
+/* **** HIER : LE CLAVIER **** */
+article#hier_clavier {
+	header {
+		h3 {
+			color: $hier;
+			text-align: center;
+			line-height: 1.3em;	
+		}
+		span.baseline {
+			display: block;
+		    font-size: 1.4em;
+		    font-style: normal;
+		}
+
+		div.time_bubble {
+			span#year {
+				left: 26px;
+			}
+			div#line {
+				left: -50px;
+			}
+		}
+	}
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+	p.left {
+		width: 30%;
+		float: left;
+	}
+
+	p.right {
+		width: 30%;
+	}
+
+	aside {
+		display: inline-block;
+    	width: 30%;
+    	div.animation {
+    		float: left;
+    	}
+	}
+
+	aside.placeholder {
+		height: 200px;
+	}
+	div#linecut {
+		background-color: $hier;
+		margin-top: 30px;
+	}
+}
+
+
+/* **** HIER : LIGHTPEN **** */
+article#hier_lightpen {
+	header {
+		h3 {
+			color: $hier;
+			text-align: center;
+			line-height: 1.3em;	
+		}
+		span.baseline {
+			display: block;
+		    font-size: 1.4em;
+		    font-style: normal;
+		}
+
+		div.time_bubble {
+			span#year {
+				left: 26px;
+			}
+			div#line {
+				left: -50px;
+			}
+		}
+	}
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+	p.left {
+		width: 30%;
+		float: left;
+	}
+
+	p.right {
+		width: 30%;
+	}
+
+	aside {
+		display: inline-block;
+    	width: 30%;
+    	div.animation {
+    		float: left;
+    	}
+	}
+
+	aside.placeholder {
+		height: 200px;
+	}
+	div#linecut {
+		background-color: $hier;
+		margin-top: 30px;
+	}
+}
+
+/* **** HIER : SOURIS **** */
+article#hier_souris {
+	header {
+		h3 {
+			color: $hier;
+			text-align: center;
+			line-height: 1.3em;	
+		}
+		span.baseline {
+			display: block;
+		    font-size: 1.4em;
+		    font-style: normal;
+		}
+
+		div.time_bubble {
+			span#year {
+				left: 26px;
+			}
+			div#line {
+				left: -50px;
+			}
+		}
+	}
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+	p.left {
+		width: 30%;
+		float: left;
+	}
+
+	p.right {
+		width: 30%;
+	}
+
+	aside {
+		display: inline-block;
+    	width: 30%;
+    	div.animation {
+    		float: left;
+    	}
+	}
+
+	aside.placeholder {
+		height: 200px;
+	}
+	div#linecut {
+		background-color: $hier;
+		margin-top: 30px;
+	}
+}
+
 /* **** HIER : L'INTERFACE GRAPHIQUE **** */
 article#hier_interface_graphique {
 	header {
@@ -1525,8 +1725,12 @@ article#demain {
 		margin-top: -40px;
 	}
 
-	p#natural {
+	p.natural {
 		width: 40%;
+	}
+
+	aside.natural {
+		margin-top: 100px;
 	}
 
 	blockquote {
@@ -1690,15 +1894,19 @@ article#credits {
 
 	aside.right {
 		width: 60%;
+		height: 480px;
+    	overflow: hidden;
 		div.animation {
-
+			margin-top: 100px;
 			div.pions {
+				position: relative;
 				div {
 					background-repeat: no-repeat;
 					background-position: center center;
 					height: 149px;
 					width: 100px;
-					position: relative;
+					position: absolute;
+
 					span {
 						color: $faux_noir;
 						display: block;
@@ -1709,15 +1917,27 @@ article#credits {
 				}
 				div#jeremy {
 					background-image:url('../img/credits/jeremy.png');
-					left: 230px;
+					left: 430px;
+					top: 10px;
+    				animation: 15s ease-in-out 0s normal none infinite circleJeremy;
+    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
+    				-moz-animation: 15s ease-in-out 0s normal none infinite circleJeremy;
 				}
 				div#sophie {
 					background-image:url('../img/credits/sophie.png');
+				  	left: 130px;
+    				top: -10px;
+    				animation: 15s ease-in-out 0s normal none infinite circleSophie;
+    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleSophie;
+    				-moz-animation: 15s ease-in-out 0s normal none infinite circleSophie;
 				}
 				div#lea {
 					background-image:url('../img/credits/lea.png');
-					left: 100px;
-    				top: 40px;
+				   	left: 170px;
+				    top: 150px;
+    				animation: 15s ease-in-out 0s normal none infinite circleLea;
+    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLea;
+    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLea;
     				span {
 						text-align: center;
 						width: 88px;
@@ -1725,55 +1945,202 @@ article#credits {
 				}
 				div#nicolas {
 					background-image:url('../img/credits/nicolas.png');
-					left: 440px;
-    				top: -290px;
+				    left: 280px;
+				    top: -110px;
+    				animation: 15s ease-in-out 0s normal none infinite circleNicolas;
+    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
+    				-moz-animation: 15s ease-in-out 0s normal none infinite circleNicolas;
 				}
 				div#lucas {
 					background-image:url('../img/credits/lucas.png');
-					left: 390px;
-					top: -250px;
+				   	left: 400px;
+				    top: 180px;
+    				animation: 15s ease-in-out 0s normal none infinite circleLucas;
+    				-webkit-animation: 15s ease-in-out 0s normal none infinite circleLucas;
+    				-moz-animation: 15s ease-in-out 0s normal none infinite circleLucas;
 				}
 			}
+
 			div#gobelins {
+				animation: 2s linear 0s alternate none infinite levitate;
+//				-webkit-animation: 2s linear 0s alternate none infinite levitate;	
+//				-moz-animation: 2s linear 0s alternate none infinite levitate;	
 				background-repeat: no-repeat;
 				background-position: center center;
 				height: 104px;
 				width: 59px;
 				background-image:url('../img/credits/gobelins_light.png');
-				left: 250px;
+				left: 310px;
 				position: relative;
-				top: -500px;
+				top: 90px;
 			}
 		}
 	}
 }
 
+
+
 /* Animations */
+/* CircleStrafeQ3onGobelins */
+@keyframes circleLucas {
+    0% {
+	   	left: 400px;
+	    top: 180px;
+}
+    20%   {
+    	left: 170px;
+	    top: 150px;
+    }
+    40%   {
+		left: 130px;
+		top: -10px;
+    }
+    60%   {
+	 	left: 280px;
+	    top: -110px;
+    }
+    80%   {
+    	left: 430px;
+		top: 10px;
+    }
+    100%   {
+	   	left: 400px;
+	    top: 180px;
+    }
+}
+
+@keyframes circleLea {
+    0% {
+    	left: 170px;
+	    top: 150px;
+}
+    20%   {
+		left: 130px;
+		top: -10px;
+    }
+    40%   {
+	 	left: 280px;
+	    top: -110px;
+    }
+    60%   {
+    	left: 430px;
+		top: 10px;
+    }
+    80%   {
+	   	left: 400px;
+	    top: 180px;
+    }
+    100%   {
+    	left: 170px;
+	    top: 150px;
+    }
+}
+
+@keyframes circleSophie {
+    0% {
+		left: 130px;
+		top: -10px;
+}
+    20%   {
+	 	left: 280px;
+	    top: -110px;
+    }
+    40%   {
+    	left: 430px;
+		top: 10px;
+    }
+    60%   {
+	   	left: 400px;
+	    top: 180px;
+    }
+    80%   {
+   	left: 170px;
+	    top: 150px;
+    }
+    100%   {
+		left: 130px;
+		top: -10px;
+    }
+}
+
+@keyframes circleNicolas {
+    0% {
+	 	left: 280px;
+	    top: -110px;
+}
+    20%   {
+    	left: 430px;
+		top: 10px;
+    }
+    40%   {
+	   	left: 400px;
+	    top: 180px;
+    }
+    60%   {
+   		left: 170px;
+	    top: 150px;
+    }
+    80%   {
+		left: 130px;
+		top: -10px;
+    }
+    100%   {
+	 	left: 280px;
+	    top: -110px;
+    }
+}
+
+@keyframes circleJeremy {
+    0% {
+    	left: 430px;
+		top: 10px;
+}
+    20%   {
+	   	left: 400px;
+	    top: 180px;
+    }
+    40%   {
+   		left: 170px;
+	    top: 150px;
+    }
+    60%   {
+		left: 130px;
+		top: -10px;
+    }
+    80%   {
+	 	left: 280px;
+	    top: -110px;
+    }
+    100%   {
+   		left: 430px;
+		top: 10px;
+    }
+}
 /* Levitate */
 @keyframes levitate {
-    from {
-    	margin-top: 80px;
+	from {
+    	top: 90px;
     }
     to   {
-    	margin-top: 50px;
+    	top: 110px;
     }
 }
 
 @-webkit-keyframes levitate {
     from {
-    	margin-top: 80px;
+    	top: 90px;
     }
     to   {
-    	margin-top: 50px;
+    	top: 110px;
     }
 }
 
 @-moz-keyframes levitate {
     from {
-    	margin-top: 80px;
+    	top: 90px;
     }
     to   {
-    	margin-top: 50px;
+    	top: 110px;
     }
 }
 
