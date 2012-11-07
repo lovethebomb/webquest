@@ -1,0 +1,61 @@
+
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+#box1 {
+
+	height:100%;
+	background-color:black;
+}
+
+#histoire {
+
+	height:100%;
+
+	border:solid 1px red;
+
+	
+	margin:0;
+	padding:0;
+  	
+  }
+
+  #histoire p {
+  	width:500px;
+  	margin:0;
+	padding:0;
+  }
+
+ #ordi {
+ 	height:100%;
+ 	width:940px;
+ 	margin:0;
+	padding:0;
+	border:solid 1px red;
+	overflow:hidden;
+
+
+ } 
+
+ #moniteur {
+ 	position:relative;
+ 	right:-500px;
+ 	float:right;
+ }
+ 
+
+ #clavier {
+ 	height:100%;
+ 	width:940px;
+ 	background: url(monclav.png) no-repeat left center fixed; 
+ 	
+ 	margin:0;
+	padding:0;
+	border:solid 1px red;
+	overflow:hidden;
+
+ }

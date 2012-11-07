@@ -3,7 +3,6 @@
 
     /* ScrollView for nav */
 
-    var interfaces = $("article#hier_interface_graphique");
     var pixelsense = $("article#pixel_sense");
     var editions_volumiques = $("article#editions_volumiques");
     var commercialisation = $("article#commercialisation");
@@ -12,13 +11,8 @@
     jQuery(document).scroll(function() {
         var scroll = $(document).scrollTop();
 
-        /* interfaces */
-        if( scroll >= interfaces.offset().top && scroll <= (interfaces.offset().top + interfaces.height()) ) {
-            $('nav ul li.active').removeClass('active');        
-            $('nav ul li#hier_1').addClass('active');
-        }
         /* pixelsense */
-        else if( scroll >= pixelsense.offset().top && scroll <= (pixelsense.offset().top + pixelsense.height()) ) {
+        if( scroll >= pixelsense.offset().top && scroll <= (pixelsense.offset().top + pixelsense.height()) ) {
             $('nav ul li.active').removeClass('active');
             $('nav ul li#aujourdhui_1').addClass('active');
         }

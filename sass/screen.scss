@@ -11,6 +11,8 @@ $demain: #42c1c7;
 $old_demain: #3fa9f5;
 $faux_noir: #181818;
 $text: #8d8a82;
+$background: #FFF3DF;
+
 
 /* HTML Generic */
 html, body {
@@ -108,7 +110,7 @@ div.articles {
 	  	-o-background-size: cover; /* pour Opera */
 	  	background-size: cover; /* version standardisée */
 	  	padding-top: 40px;
-	  	margin-left: 4%;
+//	  	margin-left: 4%;
 		.content {
 		}
 	}
@@ -159,48 +161,48 @@ div.time_bubble {
 	}
 }
 
-header h1 {
-	font-size: 4.35em;
-	margin: 20px 0;
-	display: inline-block;
-	letter-spacing: 0.015em;
-    word-spacing: 0.25em;
+header {
+	background-color: #FFF3DF;
+	h1 {
+		font-size: 4.35em;
+		margin: 20px 0;
+		display: inline-block;
+		letter-spacing: 0.015em;
+	    word-spacing: 0.25em;
+	}
+	h2	 {
+		font-size: 4.35em;
+		margin: 20px 0;
+		display: inline-block;
+		letter-spacing: 0.015em;
+	    word-spacing: 0.25em;
+	}
+	h3	 {
+		font-size: 4.35em;
+		margin: 20px 0;
+		display: inline-block;
+		letter-spacing: 0.015em;
+	    word-spacing: 0.25em;
+	}
+	span {
+		font-size: 1.35em;
+		font-weight: 700;
+		color: black;
+	}
+	span.baseline {
+		display: inline-block;
+		margin-left: 175px;
+	}
+	span.title {
+		color: black;
+		display: block;
+		font-size: 1.3em;
+		font-weight: 700;
+		padding-bottom: 10px;
+	}
 }
 
-header h2	 {
-	font-size: 4.35em;
-	margin: 20px 0;
-	display: inline-block;
-	letter-spacing: 0.015em;
-    word-spacing: 0.25em;
-}
 
-header h3	 {
-	font-size: 4.35em;
-	margin: 20px 0;
-	display: inline-block;
-	letter-spacing: 0.015em;
-    word-spacing: 0.25em;
-}
-
-header span {
-	font-size: 1.35em;
-	font-weight: 700;
-	color: black;
-}
-
-header 	span.baseline {
-	display: inline-block;
-	margin-left: 175px;
-}
-
-span.title {
-	color: black;
-	display: block;
-	font-size: 1.3em;
-	font-weight: 700;
-	padding-bottom: 10px;
-}
 
 a.small:before {
 	background: url('../img/link_red.png') no-repeat center center #FFF3DF;
@@ -547,31 +549,6 @@ article#hier_au_commencement {
 	aside {
 		float: right;
     	width: 40%;
-
-    	div.animation {
-    		div {
-    			display: inline-block;
-    		}
-
-    		div#tete {
-    			background: url('../img/hiroshii/_hiroshii_tete.png') center center no-repeat;
-				height: 117px;
-			    left: 40px;
-				position: relative;
-				top: -302px;
-				width: 179px;
-				animation: 2s linear 0s alternate none infinite hiroshii;
-				-webkit-animation: 2s linear 0s alternate none infinite hiroshii;
-				-moz-animation: 2s linear 0s alternate none infinite hiroshii;
-    		}
-
-    		div#corps {
-    			background: url('../img/hiroshii/_hiroshii_corps.png') center center no-repeat;
-    			width: 259px;
-    			height: 240px;
-
-    		}
-    	}
 	}
 
 	div#linecut {
@@ -580,6 +557,10 @@ article#hier_au_commencement {
 	}
 }
 
+/* **** HIER : Le moniteur **** */
+article#hier_moniteur {
+
+}
 /* **** HIER : L'INTERFACE GRAPHIQUE **** */
 article#hier_interface_graphique {
 	header {
@@ -624,6 +605,91 @@ article#hier_interface_graphique {
 	}
 }
 
+/* **** HIROSHI ISHII **** */
+article#hiroshi {
+	header {
+		margin: 20px 21%;
+		h1, h2, h3 {
+	    	color: $hier;
+	    }
+	    
+		h3 {
+			text-align: center;
+			line-height: 1.3em;	
+			width: 120%;
+		}
+
+		span.baseline {
+			display: block;
+		    font-size: 1.2em;
+		    font-style: italic;
+		    text-align: center;
+		    width: 100%;
+			margin: 0 9%;
+		    color: $text;
+		}
+	}
+
+	div#linecut {
+		 margin: 40px 49%;
+		 background-color: $text;
+	}
+
+	p.heading {
+	 	display: inline-block;
+	    margin-left: 40px;
+	    width: 33%;
+	    a {
+	    	font-size: 0.85em;
+	    }
+	}
+
+	p.left {
+		width: 30%;
+	 	display: inline-block;
+	}
+	p.right {
+		width: 28%;
+	 	display: inline-block;
+	}
+	div#full {
+		margin-top: 50px;
+	}
+	a.small:before {
+		background-image:url('../img/link_yellow.png');
+	}
+	aside {
+		margin-left: 110px;
+		width: 30%;
+	 	display: inline-block;
+
+		div.animation {
+    		div {
+    			display: inline-block;
+    		}
+
+    		div#tete {
+    			background: url('../img/hiroshii/_hiroshii_tete.png') center center no-repeat;
+				height: 117px;
+			    left: 40px;
+				position: relative;
+				top: -302px;
+				width: 179px;
+				animation: 2s linear 0s alternate none infinite hiroshii;
+				-webkit-animation: 2s linear 0s alternate none infinite hiroshii;
+				-moz-animation: 2s linear 0s alternate none infinite hiroshii;
+    		}
+
+    		div#corps {
+    			background: url('../img/hiroshii/_hiroshii_corps.png') center center no-repeat;
+    			width: 259px;
+    			height: 240px;
+
+    		}
+    	}
+	}
+}
+
 /* **** AUJOURDH'UI **** */
 article#denosjours {
 	header {
@@ -660,7 +726,6 @@ article#denosjours {
 	p.heading {
 	 	display: inline-block;
 	    margin-left: 40px;
-	    margin-top: 50px;
 	    width: 33%;
 	    a {
 	    	font-size: 0.85em;
@@ -1421,8 +1486,14 @@ article#demain {
 		width: 50%;
 		div.animation {
 		}
+
 	}
 
+	aside#naturelle {
+		img {
+			margin-top: 50px;
+		}
+	}
 	aside.left {
 		width: 424px;
 		height: 409px;
