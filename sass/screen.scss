@@ -489,11 +489,11 @@ article#home {
     	width: 40%;
 	}
 	aside {
-		float: right;
+		float: left;
     	width: 40%;
 	}
-	aside.placeholder {
-		height: 300px;
+	p.right {
+		width: 40%;
 	}
 
 	div#linecut {
@@ -504,6 +504,7 @@ article#home {
 	blockquote {
 		width: 650px;
 		padding: 0 18%;
+		line-height: 1.7em;
 	}
 
 	img {
@@ -1118,8 +1119,9 @@ article#editions_volumiques {
 					span.title {
 						font-size: 1.3em;
 						color: $aujourdhui;
-						margin-left: 40%;
-						width: 130px;
+						margin-left: 1px;
+					    text-align: center;
+					    width: 100%;
 					}
 
 					p {
@@ -1276,6 +1278,10 @@ article#enjeux {
 	p {
 		span.title {
     		font-size: 1.3em;
+    		color: black;
+		    display: block;
+		    font-weight: 700;
+		    padding-bottom: 10px;
     	}
 
     	a.small {
