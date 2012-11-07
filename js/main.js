@@ -1,17 +1,56 @@
  $(document).ready(function(){       
 
+
+    /* ScrollView for nav */
+
+    var interfaces = $("article#hier_interface_graphique");
+    var pixelsense = $("article#pixel_sense");
+    var editions_volumiques = $("article#editions_volumiques");
+    var commercialisation = $("article#commercialisation");
+    var enjeux = $("article#enjeux");
+
+    jQuery(document).scroll(function() {
+        var scroll = $(document).scrollTop();
+
+        /* interfaces */
+        if( scroll >= interfaces.offset().top && scroll <= (interfaces.offset().top + interfaces.height()) ) {
+            $('nav ul li.active').removeClass('active');        
+            $('nav ul li#hier_1').addClass('active');
+        }
+        /* pixelsense */
+        else if( scroll >= pixelsense.offset().top && scroll <= (pixelsense.offset().top + pixelsense.height()) ) {
+            $('nav ul li.active').removeClass('active');
+            $('nav ul li#aujourdhui_1').addClass('active');
+        }
+        else if( scroll >= editions_volumiques.offset().top && scroll <= (editions_volumiques.offset().top + editions_volumiques.height()) ) {
+            $('nav ul li.active').removeClass('active');
+            $('nav ul li#aujourdhui_2').addClass('active');
+        }
+        else if( scroll >= commercialisation.offset().top && scroll <= (commercialisation.offset().top + commercialisation.height()) ) {
+            $('nav ul li.active').removeClass('active');
+            $('nav ul li#aujourdhui_3').addClass('active');
+        }
+        else if( scroll >= enjeux.offset().top && scroll <= (enjeux.offset().top + enjeux.height()) ) {            $('nav ul li#aujourdhui_3').addClass('active');
+            $('nav ul li.active').removeClass('active');
+            $('nav ul li#aujourdhui_4').addClass('active');
+        }
+        else {
+            $('nav ul li.active').removeClass('active');        
+        }
+    });
+
     /* Tooltip */
     $("nav ul li a").hover(function() {
-        console.log('hovering ' + $(this).attr('title'));
         $(this).append('<div class="tooltip"><span>'+ $(this).attr('title') + '</span></div>');
+        $('div.tooltip').animate({'opacity':'1'});
     }, function() {
-        $('div.tooltip').remove();
+        $('div.tooltip').animate({opacity:0}).delay(1000).remove();
+        
     });
 
     /* scrollTo */
     $("nav ul li a, a.scrollTo").click(function(event){     
         event.preventDefault();
-        console.log('Hash : ' + $(this.hash).offset().top);
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1700);
     });
 
@@ -173,7 +212,8 @@
 
 	/* LES ENJEUX - Click */
 	$('ul#pieces li img').click(function() {
-		console.log('clickon');
+        $('div#tablette div#fleche').removeClass('active');
+		// console.log('clickon');
 		id = $(this).parent().attr('id');
 		$('div#tablette div.description div.active').removeClass('active');
 		$('div#tablette div.description div#mini_' + id).addClass('active');
@@ -186,23 +226,23 @@
 	/* LES ENJEUX - Mouse follow */
 	$('div#table').mousemove(function(e){
 		yTop = $(this).position().top;
-		xTop = $(this).position().left;
-		degree = (((e.pageY-yTop)/2)-(e.pageY-yTop)+100)*0.1;
-		left = ((e.pageX/(e.pageX-1))-1)*100;
-
-		oldValue = $('div#main').css('left');
-		if(left < 0.16)	{
-			newValue = parseFloat(oldValue)+parseFloat(left);
-		} else {
-			newValue = parseFloat(oldValue)-parseFloat(left);
-		} 
 		
-		$('div#main').css({ 'left': ' '+ newValue + 'px'});
-
+		degree = (((e.pageY-yTop)/2)-(e.pageY-yTop)+100)*0.1;
+				
 		if((degree > -20) && (degree < 14)) {
 			$('div#main').css({ 'transform':'rotate(' + degree + 'deg)'});
 		} else {
 			return false;
 		}
 	});
+
+    /* CREDITS <3 */
+    $('article#credits ul li span').click(function() {
+        $('article#credits ul ul').removeClass('active');
+        id = $(this).parent().attr('class');
+        console.log(id);
+        console.log($('article#credits ul.'+id+' ul'));
+        $('article#credits ul li.'+id+' ul').addClass('active');
+    });
+
 });

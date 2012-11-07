@@ -420,8 +420,10 @@ aside {
 		    position: absolute;
 		    width: 88px;
 		    z-index: 1000000;
+		    opacity: 0;
+			
 
-		    span {
+			span {
 				color: #FFFFFF;
 			    display: block;
 			    font-size: 0.8em;
@@ -685,6 +687,11 @@ article#pixel_sense {
 	    	color: $aujourdhui;
 	    }
 	}
+	
+	div.time_bubble {
+		background-image:url('../img/timer/06_pixelsense.png');
+	}
+
 	div.linecut {
 		margin-bottom: 30px;
 		margin-top: 40px;
@@ -861,6 +868,10 @@ article#editions_volumiques {
 
 		h1, h2, h3 {
 	    	color: $aujourdhui;
+	    }
+
+	    div.time_bubble {
+	    	background-image: url('../img/timer/07_editionvolumique.png');
 	    }
 	}
 
@@ -1072,8 +1083,13 @@ article#editions_volumiques {
 
 /* **** COMMERCIALISATION **** */
 article#commercialisation {
-	header h3 {
-		color: $aujourdhui;
+	header {
+		h3 {
+			color: $aujourdhui;
+		}
+		div.time_bubble {
+			background-image: url('../img/timer/08_commercialisation.png');
+		}
 	}
 
 	p.left {
@@ -1159,7 +1175,7 @@ article#enjeux {
 			font-size: 0.5em;
 			font-family: "Helvetica", "Arial", sans-serif;
 			letter-spacing: 0.03em;
-			text-align: right;
+			text-align: center;
 			strong {
 				font-style: normal;
 				font-weight: 700;
@@ -1169,7 +1185,7 @@ article#enjeux {
 		}
 	}
 	blockquote:after {
-		left: 280px;
+		left: 300px;
 	    top: -30px;
 	}
 
@@ -1212,6 +1228,21 @@ article#enjeux {
 				height: 346px;
 				background: url('../img/enjeux_educ/_enjeuxeduc_ipad.png') center center no-repeat;
 				display: inline-block;
+
+				div#fleche {
+					width: 153px;
+					background: url('../img/enjeux_educ/fleche_educ.png') center center no-repeat;
+					left: 40px;
+				    position: relative;
+				    top: 100px;
+				    opacity: 0;
+				    height: 0;
+				}
+
+				div#fleche.active {
+					opacity: 1;
+					height: 104px;
+				}
 
 				div.description {
 					overflow: hidden;
@@ -1311,6 +1342,17 @@ article#enjeux {
 				top: -190px;
 				width: 405px;
 				z-index: 101;
+				div#ondes {
+					background: url("../img/enjeux_pro/ondes.gif") no-repeat scroll center center transparent;
+					height: 30px;
+					width: 38px;
+					left: 13px;
+				    position: relative;
+				    top: 115px;
+				    transform: rotate(20deg);
+				   	-webkit-transform: rotate(20deg);
+				   	-moz-transform: rotate(20deg);
+				}
 			}
 			div#cache {
 				background: url("../img/enjeux_pro/_enjeuxpro_cache.png") no-repeat scroll center center transparent;
@@ -1446,6 +1488,187 @@ article#demain {
     	left: 0;
     	top: 20px;
     }
+}
+
+/* **** CREDITS **** */
+article#credits {
+	header {
+	    margin: 20px 25%;
+
+	    h1, h2, h3 {
+	    	color: $faux_noir;
+	    }
+
+		h2 {
+			text-align: center;
+			line-height: 1.3em;	
+			width: 100%;
+		}
+
+		span.baseline {
+			display: block;
+		    font-size: 1.2em;
+		    font-style: italic;
+		    text-align: center;
+		    width: 100%;
+		    margin: 0;
+		    color: $text;
+		}
+	}
+
+	p.heading {
+		display: inline-block;
+		margin: 0;
+    	width: 40%;
+	}
+
+	div#linecut {
+		background-color: $faux_noir;
+		margin: 10px 42% 30px;
+	}
+
+	div#links {
+		width: 30%;	
+		display: inline-block;
+		ul {
+			list-style-type: none;
+
+			div.sep {
+			   	margin: 0 0 20px -30px;
+	    		width: 230px;
+			}
+			li {
+				span {
+					font-family: "BebasRegular";
+					letter-spacing: 0.09em;
+					line-height: 1em;
+					font-weight: 400;
+					font-size: 1.5em;
+				}
+				span:before {
+					background: url('../img/link_blue_big.png') no-repeat center center #FFF3DF;
+					width: 30px;
+					height: 22px;
+					border-bottom: none;
+					display: inline-block;
+					vertical-align: middle;
+					content: "";
+					margin-right: 20px
+				}
+				ul {
+					width: 100%;
+					height: 0;
+					opacity: 0;
+					-webkit-transition: opacity 0.5s ease-out;
+					-moz-transition: opacity 0.5s ease-out;
+					transition: opacity 0.5s ease-out;
+
+					li {
+						display: none;
+					}
+					li a:hover {
+						color: $faux_noir;
+					}
+				}
+				ul.active {
+					height: auto;
+					opacity: 1;
+					li {
+						display: list-item;
+					}
+				}
+			}
+			
+			li:hover {
+				cursor: pointer;
+			}
+
+			li.hier {
+				span {
+					color: $hier;
+				}
+				span:before {
+					background: url('../img/link_yellow_big.png') no-repeat center center #FFF3DF;
+				}
+			}
+
+			li.aujourdhui {
+				span {
+					color: $aujourdhui;
+				}
+				span:before {
+					background: url('../img/link_red_big.png') no-repeat center center #FFF3DF;
+				}
+			}
+			li.demain {
+				span {
+					color: $demain;
+				}
+				span:before {
+					background: url('../img/link_blue_big.png') no-repeat center center #FFF3DF;
+				}
+			}
+		}
+	}
+
+	aside.right {
+		width: 60%;
+		div.animation {
+
+			div.pions {
+				div {
+					background-repeat: no-repeat;
+					background-position: center center;
+					height: 149px;
+					width: 100px;
+					position: relative;
+					span {
+						color: $faux_noir;
+						display: block;
+						font-size: 0.85em;
+						position: relative;
+						top: 150px;
+					}
+				}
+				div#jeremy {
+					background-image:url('../img/credits/jeremy.png');
+					left: 230px;
+				}
+				div#sophie {
+					background-image:url('../img/credits/sophie.png');
+				}
+				div#lea {
+					background-image:url('../img/credits/lea.png');
+					left: 100px;
+    				top: 40px;
+    				span {
+						text-align: center;
+						width: 88px;
+    				}
+				}
+				div#nicolas {
+					background-image:url('../img/credits/nicolas.png');
+					left: 440px;
+    				top: -290px;
+				}
+				div#lucas {
+					background-image:url('../img/credits/lucas.png');
+					left: 390px;
+					top: -250px;
+				}
+			}
+			div#gobelins {
+				background-repeat: no-repeat;
+				background-position: center center;
+				height: 104px;
+				width: 59px;
+				background-image:url('../img/credits/gobelins_light.png');
+				left: 250px;
+				position: relative;
+				top: -500px;
+			}
+		}
+	}
 }
 
 /* Animations */

@@ -9,7 +9,7 @@
         <title>Webquest - Interfaces Tangibles - Gobelins CDNL 2013</title>
         <meta name="description" content="Site explicatif dédié aux interfaces tangibles">
         <meta name="viewport" content="width=device-width">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.png" type="image/png">
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -510,9 +510,8 @@ Grâce a un système de scotch en métal les voitures deviennent objets tangible
                             <aside class="left">
                                 <div id="epawn" class="animation">
                                     <div></div>
-                                    &nbsp;
                                 </div>
-                                <div id="epawn_shadow">&nbsp;</div>
+                                <div id="epawn_shadow"></div>
                             </aside>
                             <p class="right">
                                 <span class="title">La technologie EPawn</span>
@@ -551,6 +550,7 @@ Un système sans écran tout en gardant le principe des capteurs est en train d�
                             <aside class="left">
                                 <div class="animation">
                                     <div id="tablette">
+                                        <div id="fleche" class="active"></div>
                                     <div class="description">
                                         <div id="mini_lapin">
                                             <img src="img/enjeux_educ/_enjeuxeduc_mini_lapin.png" alt="">
@@ -603,7 +603,9 @@ De plus il est plus facile d'expliquer une situation à un patient dans le cas d
                             <aside class="right">
                                 <div class="animation">
                                     <div id="table"></div>
-                                    <div id="main"></div>
+                                    <div id="main">
+                                        <div id="ondes"></div>
+                                    </div>
                                     <div id="cache"></div>
                                 </div>
                             </aside>
@@ -698,38 +700,93 @@ De plus il est plus facile d'expliquer une situation à un patient dans le cas d
 
             <section>
                 <article id="credits">
-                    Credits
+                    <div class="content">     
+                        <header>
+                            <h2>Credits</h2>
+                            <span class="baseline">Sources et équipe</span>
+                        </header>
+                        <div class="clearfix"></div>
+
+                        <div id="linecut"></div>
+                        
+                        <div id="links">
+                            <ul>
+                                <li class="hier">
+                                    <span>HIER</span>
+                                    <ul>
+                                        <li><a href="http://ftp.arl.mil/mike/comphist/eniac-story.html" title="ARL - The ENIAC Story">ARL - The ENIAC Story</a></li>
+                                        <li><a href="http://toastytech.com/guis/alto.html" title="Toasty Tech - Xerox Alto">Toasty Tech - Xerox Alto</a></li>
+                                        <li><a href="http://www.cours-informatique-gratuit.fr/debutant/souris-clavier/5.presentation-d-un-clavier" title="CIG - Le clavier">CIG - Le clavier</a></li>
+                                        <li><a href="http://www.commentcamarche.net/contents/histoire/ordinateur.php3" title="CCM - Ordinateur">CCM - Ordinateur</a></li>
+                                    </ul>
+                                </li>
+                                <div class="sep"></div>
+                                <li class="aujourdhui">
+                                    <span>AUJOURD'HUI</span>
+                                    <ul>
+                                        <li><a href="http://xzen-music.fr/le-reactable" title="Le Reactable">XZen-Music - Le Reactable</a></li>
+                                        <li><a href="http://volumique.com/v2/" title="Editions Volumiques">Editions Volumiques</a></li>
+                                        <li><a href="http://www.journaldugeek.com/2012/04/21/jdg-tv-samsung-surface-sur40/" title="JDG - Samsung Surface SUR40">JDG - Samsung Surface SUR40</a></li>
+                                        <li><a href="http://www.journaldugeek.com/2011/09/02/samsung-sur40-microsoft-surface/" title="JDG - Samsung Surface SUR40 2">JDG - Samsung Surface SUR40 2</a></li>
+                                        <li><a href="http://www.appmatestoys.com" title="AppMATes Toys">AppMATes Toys</a></li>
+                                        <li><a href="http://www.epawn.fr" title="ePawn">ePawn</a></li>
+                                        <li><a href="http://www.reactable.com" title="Reactable">Reactable</a></li>
+                                        <li><a href="http://www.microsoft.com/en-us/pixelsense/default.aspx" title="Pixel Sense">Pixel Sense</a></li>
+                                        <li><a href="http://ciid.dk/education/portfolio" title="Copenhagen Institute of Interaction Design">Copenhagen Institute of Interaction Design</a></li>
+                                        <li><a href="http://www.serious-game.fr/wordpress/wp-content/uploads/2012/04/L%E2%80%99EMERGENCE-DES-INTERFACES-TANGIBLES_Claire-Siegel1.pdf" title="Claire Siegel - Interfaces Tangibles">Claire Siegel - Interfaces Tangibles</a></li>
+                                        <li><a href="http://www.cndp.fr/agence-usages-tice/que-dit-la-recherche/les-interfaces-tangibles-en-education-quelles-potentialites-55.htm" title="Interfaces Tangibles & Éducation">Interfaces Tangibles & Éducation</a></li>
+
+                                    </ul>
+                                </li>
+                                <div class="sep"></div>
+                                <li class="demain">
+                                    <span>DEMAIN</span>
+                                    <ul>
+                                        <li><a href="http://www.semageek.com/la-realite-augmentee-envahit-un-bac-a-sable-pour-simuler-lecoulement-des-fluides/" title="Semageek - Bac à sable">Semageek - Bac à sable</a></li>
+                                        <li><a href="http://www.semageek.com/zeron-une-interface-de-controle-qui-defi-les-lois-de-la-gravite/" title="Semageek - Zeron">Semageek - Zeron</a></li>
+                                        <li><a href="http://cba.mit.edu" title="MIT - Center of Bits and Atoms">MIT - Center of Bits and Atoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <aside class="right">
+                            <div class="animation">
+                                <div class="pions">
+                                    <div id="jeremy"><span>Jérémy Maurel</span></div>
+                                    <div id="sophie"><span>Sophie Moyse</span></div>
+                                    <div id="lea"><span>Léa Taloc</span></div>
+                                    <div id="nicolas"><span>Nicolas Garnier</span></div>
+                                    <div id="lucas"><span>Lucas Heymès</span></div>
+                                </div>
+                                <div id="gobelins"></div>
+                            </div>
+                        </aside>
+                    </div>
                 </article>
-            </section>
-                
+            </section>              
             </div> <!-- end div.articles -->
-
         </div>  <!-- end div.wrapper -->
-
         <!--    NAVIGATION      -->
         <aside>
             <nav>
                 <ul>
                     <li id="home"><a href="#home" title="Home">Home</a></li>
                     <li id="hier" class="hier"><a href="#hier_au_commencement" title="Hier">Hier</a></li>
-                    <li id="hier_1" class="hier inner active"><a href="#hier_interface_graphique" title="Interfaces">Interfaces</a></li>
+                    <li id="hier_1" class="hier inner"><a href="#hier_interface_graphique" title="Interfaces">Interfaces</a></li>
 
                     <li id="aujourdhui"><a href="#denosjours" title="De nos jours">De nos jours</a></li>
-                    <li id="aujourdhui_1" class="aujourdhui inner active"><a href="#pixel_sense" title="Pixel Sense">Pixel Sense</a></li>
+                    <li id="aujourdhui_1" class="aujourdhui inner"><a href="#pixel_sense" title="Pixel Sense">Pixel Sense</a></li>
                     <li id="aujourdhui_2" class="aujourdhui inner"><a href="#editions_volumiques" title="Ed.Volumiques">Ed.Volumiques</a></li>
                     <li id="aujourdhui_3" class="aujourdhui inner"><a href="#commercialisation" title="Commercialisation">Commercialisation</a></li>
                     <li id="aujourdhui_4" class="aujourdhui inner"><a href="#enjeux" title="Les Enjeux">Aujourd'hui_4</a></li>
 
                     <li id="demain"><a href="#demain" title="Demain">Demain</a></li>
  
-
                     <li id="credits"><a href="#credits" title="Credits">Credits</a></li>
                 </ul>
             </nav>
         </aside>
-
         <script type="text/javascript" src="js/main.js"/> 
-
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-35902643-1']);
@@ -740,7 +797,6 @@ De plus il est plus facile d'expliquer une situation à un patient dans le cas d
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script>
-    
+        </script> 
     </body>
 </html>
